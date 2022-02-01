@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+
 
 export default function Home() {
   return (
@@ -23,9 +25,11 @@ export default function Home() {
               <input className="mb-2 pl-1 py-0.5 border border-gray-400 w-full" placeholder="someone@example.com" type="email" id="email" name="email"/>
               <input className="border pl-1 py-0.5 border-gray-400 w-full" placeholder="Password" type="password" id="password" name="password"/>
             </div>
-            <a href="/message" className='bg-[#0067b8] text-white px-5 py-1 hover:opacity-25'>
+            <Link href="/message">
+              <a className='bg-[#0067b8] text-white px-5 py-1 hover:opacity-25'>
               Sign in
-            </a>
+              </a>
+            </Link>
           </div>
           <p className='absolute bottom-5 text-xs text-gray-500'>© 2018 Microsoft</p>
         </div>
