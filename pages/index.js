@@ -15,7 +15,8 @@ export default function Home() {
 
     <div className='font-sans text-sm'>
         <div className="flex">
-        <div className=" w-full h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
+        <div className=" w-full h-screen">
+          <img className="object-cover h-full w-full " src='https://fs.pori.fi/adfs/portal/illustration/illustration.jpg?id=534A5BC1E0A663601F9C836C91F8DB01E9569EC040453A397E24B8EE2D8AA210'/>
         </div>
         <div className='p-16 min-w-[500px]'>
           <img className="pb-28" src='https://fs.pori.fi/adfs/portal/logo/logo.png?id=CB39F2622BCF19EECF330BAF9997244FD33E86E387795B1DE0994342DC3A8A72'/>
