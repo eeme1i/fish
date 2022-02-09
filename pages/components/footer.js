@@ -15,14 +15,14 @@ function Footer(){
                 </Link>
             </div>
             <div className='grid grid-rows-3'>
-                <Link href="/" >
-                    <a className='hover:underline hover:text-gray-400'>Valikko</a>
+                <Link href="/treasureHunt" >
+                    <a className='hover:underline hover:text-gray-400'>Aarrejahti</a>
                 </Link>
-                <Link href="/login">
-                    <a className='hover:underline hover:text-gray-400'>Kirjautumissivu</a>
+                <Link href="/notFound">
+                    <a className='hover:underline hover:text-gray-400'>Anatö van</a>
                 </Link>
-                <Link href="/message">
-                    <a className='hover:underline hover:text-gray-400'>Varoitus</a>
+                <Link href="/notFound">
+                    <a className='hover:underline hover:text-gray-400'>404</a>
                 </Link>
             </div>
         </div>
