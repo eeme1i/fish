@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -23,7 +24,11 @@ export default function Home() {
 
             Sivuston lähdekoodi: <a className='hover:underline' href='https://github.com/eeme1i/fish'>https://github.com/eeme1i/fish</a><br/><br/>
 
-             - porinlukio.fi
+            <Link href="/">
+            <a className='hover:underline'>
+               - porinlukio.fi
+            </a>
+            </Link>
         </p>
     </div>
     </div>
