@@ -10,10 +10,10 @@ function Header() {
                 </a>
                 </Link>
                 <div className='flex space-x-4'>
-                    <a target="_blank" href="https://github.com/eeme1i/fish" className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/eeme1i/fish" className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
                     Github
                     </a>
-                    <a target="_blank" href="https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/releases" className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/releases" className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
                     MEK
                     </a>
                 </div>
