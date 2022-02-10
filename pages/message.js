@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="bg-red-500 h-screen">
       <Head>
-        <title>porinlukio.fi</title>
+        <title>porinlukio.fi - aarrejahtipeli</title>
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

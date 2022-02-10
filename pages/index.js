@@ -29,6 +29,13 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <div>
+          <Link href="/treasureHunt">
+            <a className=''>
+              aarrejahtipeli
+            </a>
+          </Link>
+        </div>
       </div>
       <Footer />
     </div>

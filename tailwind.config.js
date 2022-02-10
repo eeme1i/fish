@@ -14,7 +14,13 @@ module.exports = {
         'nord5': '#e5e9f0',
         'nord6': '#eceff4',
       },
+      padding:{
+        '1/2': '50%',
+        full: '100%',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio')
+  ],
 }
