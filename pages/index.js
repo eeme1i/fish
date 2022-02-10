@@ -28,13 +28,13 @@ export default function Home() {
               </a>
             </Link>
           </div>
-        </div>
-        <div>
-          <Link href="/treasureHunt">
-            <a className=''>
+          <div className='hover:scale-110 transition ease-in-out hover:bg-nord3'>
+            <Link className="" href="/treasureHunt">
+              <a className='px-8 py-8 bg-nord1 rounded-2xl transition ease-in-out hover:bg-nord3'>
               aarrejahtipeli
-            </a>
-          </Link>
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
       <Footer />
