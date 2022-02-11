@@ -2,10 +2,10 @@ import Link from 'next/link'
 
 function Footer() {
     return (
-    <div className="font-monospace m-auto lg:w-2/4 sm:w-3/4 items-baseline">
+    <div className="font-monospace m-auto lg:w-2/4 sm:w-3/4 items-baseline hidden sm:block">
         <div className='w-full h-0.5 bg-nord3'></div>
-        <div className='my-8'>
-            <div className='mx-8 mb-4 grid-1 flex justify-center space-x-4'>
+        <div className='my-8 w-2/4 m-auto'>
+            <div className='mb-4 flex justify-center space-x-4'>
                 <div className='flex text-nord4'>
                     <Link href="/">
                     <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
@@ -42,7 +42,7 @@ function Footer() {
                     </Link>
                 </div>
             </div>
-            <div className='mx-8 grid-1 flex justify-center space-x-4'>
+            <div className='grid-1 flex justify-center space-x-4'>
                 <div className='flex text-nord4'>
                     <Link href="/message">
                     <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
