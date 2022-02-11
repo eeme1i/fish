@@ -10,7 +10,7 @@ export default function Home() {
       <Head>
         <title>Sign in</title>
         <meta name="description" content="" />
-        <link rel="icon" href="" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
     <div className='font-sans text-sm'>
