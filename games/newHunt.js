@@ -1,22 +1,33 @@
-import { getNumbers, getRandom, arrayRemoveNum }  from "./helpers";
+// Copyright Henri Vainio 2022
+import GameStates from "./gameStates";
+import { getNumbers, getRandom, arrayRemoveNum, updateElemText }  from "./helpers";
+import PointCounter from "./pointCounter";
 
 const foundTreasureMsg = "aarre";
 const foundBombMsg = "poks";
 const foundEmptyMsg = "tyhjä";
 
+const treasureGetPoints = 100;
+const bombLosePoints = 30;
 
+
+
+// game states: ["waiting", "started", "ended"]
 
 
 export default class Game{
     // input (int, str, int)
-    constructor(tileAmount, idBody, difficulty = 3){
+    constructor(tileAmount, idBody, tileDisplayName, difficulty = 3, scoreDisplay = undefined){
         let numbers = getNumbers(getRandom(8), difficulty + 1, tileAmount)  // get 1 more for treasure
         this.tiles = tileAmount;
         this.treasure = numbers[0];
         this.bomb = numbers.slice(1);
         this.tileIdBody = idBody;   // body of element id, for example "treasurePanel"
         this.notCheked = Array.from(Array(tileAmount + 1).keys());
-        this.started = false;
+        this.score = new PointCounter(0);
+        this.scoreDisplay = scoreDisplay;
+        this.tileDisplayName = tileDisplayName;
+        this.state = GameStates.waiting;
     }
 
 
@@ -25,8 +36,8 @@ export default class Game{
     
     start(){
         // start created game
-        this.started = true;
-        this.resetTiles(this.tiles, "Ruutu ");
+        this.state = GameStates.started;
+        this.resetGame(this.tiles, this.tileDisplayName);
     }
     
     // input (int)
@@ -41,44 +52,54 @@ export default class Game{
         if(this.#checkNumber(tileIndex) === true){
             // treasure
             this.#tileStateTreasure(tileIndex);
+            this.#revealAll();
+            this.#updateScore();
+            this.state = GameStates.ended;
             return;
         }
         
         if(this.#checkNumber(tileIndex) === false){
             // bomb
             this.#tileStateBoom(tileIndex);
+            this.#checkIfLastTile();
             return;
         }
         //empty
-        this.#tileStateEmpty(tileIndex, "tyhjä")
+        this.#tileStateEmpty(tileIndex);
+        this.#checkIfLastTile();
     }
     
     // input (int, str)
-    resetTiles(tileAmount, tileDisplayName){
+    resetGame(tileAmount, tileDisplayName){
         // put tiles to "new game" state
         for(let i = 0; i <= tileAmount; i++){
             document.getElementById(this.tileIdBody + i).innerText = tileDisplayName + (i + 1);   // shift name by 1
         }
+        this.#resetScoreDisplay();
     }
 
+    defineScoreDisplay(scoreDisplay){
+        this.scoreDisplay = scoreDisplay;
+    }
     
-    
-    
-    
+
     /// private methods 
 
     // input (int)
     #tileStateTreasure(tileIndex){
-        document.getElementById(this.tileIdBody + tileIndex).innerHTML = foundTreasureMsg;
+        this.#revealTile(tileIndex, foundTreasureMsg);
+        this.score.add(treasureGetPoints);
     }
 
     // input (int)
     #tileStateBoom(tileIndex){
-        document.getElementById(this.tileIdBody + tileIndex).innerHTML = foundBombMsg;
+        this.#revealTile(tileIndex, foundBombMsg);
+        this.score.subtract(bombLosePoints)
     }
+
     // input (int)
     #tileStateEmpty(tileIndex){
-        document.getElementById(this.tileIdBody + tileIndex).innerHTML = foundEmptyMsg;
+        this.#revealTile(tileIndex, foundEmptyMsg);
     }
 
     // input (int)
@@ -92,6 +113,50 @@ export default class Game{
         }
         else{
             return null;
+        }
+    }
+
+    #revealAll(){
+        while (this.notCheked.length > 0){
+            let index = this.notCheked[0];
+            let text = this.#getTileText(index);
+            this.notCheked.shift();
+            this.#revealTile(index, text);
+        }
+    }
+
+    // input (int)
+    #getTileText(tileIndex){
+        if (this.#checkNumber(tileIndex) === true){
+            return foundTreasureMsg;
+        }
+        if(this.#checkNumber(tileIndex) === false){
+            return foundBombMsg;
+        }
+        return foundEmptyMsg;
+    }
+
+    //input (int, str)
+    #revealTile(tileIndex, text){
+        updateElemText(this.tileIdBody + tileIndex, text);
+    }
+
+    // input (int)
+    #updateScore(newScore = this.score.value){
+        if (this.scoreDisplay !== undefined){
+            updateElemText(this.scoreDisplay, newScore);
+        }
+    }
+
+    #resetScoreDisplay(){
+        this.#updateScore(0);
+    }
+    
+    #checkIfLastTile(){
+        if (this.notCheked <= 1){
+            this.#revealAll();
+            this.#updateScore();
+            this.state = GameStates.ended;
         }
     }
 

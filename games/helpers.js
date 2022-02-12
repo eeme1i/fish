@@ -25,6 +25,7 @@ export function getNumbers(seed, amount, maxValue){
 }
 
 // remove number or other object from array and return array 
+// int is number you want to remove, not index
 // input (int, array)
 export function arrayRemoveNum(num, array){
     let index = array.indexOf(num);
@@ -37,4 +38,12 @@ export function arrayRemoveNum(num, array){
 // input (int)
 export function getRandom(maxValue){
     return Math.floor(Math.random() * maxValue);
+}
+
+
+
+
+// input (str, str)
+export function updateElemText(elemId, text){
+    (document.getElementById(elemId)).innerHTML = text;
 }
