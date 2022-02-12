@@ -5,13 +5,13 @@
 // return num array with amount of random numbers between 0 and maxValue
 // does not include same number twice
 // input (int, int, int) are they int in js?? i'm from c# and python 
-export function GetNumbers(seed, amount, maxValue){
+export function getNumbers(seed, amount, maxValue){
     let nums = [seed];
     let num = seed;
 
     for (let i = 0; i < amount; i++){
         while (true){
-            num += GetRandom(maxValue);
+            num += getRandom(maxValue);
             while (num > maxValue){
                 num -= maxValue;
             }
@@ -24,8 +24,17 @@ export function GetNumbers(seed, amount, maxValue){
     return nums;
 }
 
+// remove number or other object from array and return array 
+// input (int, array)
+export function arrayRemoveNum(num, array){
+    let index = array.indexOf(num);
+    array.splice(index, 1);
+    return array;
+}
+
 
 // get random number between 0 and max
-export function GetRandom(maxValue){
+// input (int)
+export function getRandom(maxValue){
     return Math.floor(Math.random() * maxValue);
 }
