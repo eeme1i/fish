@@ -5,8 +5,8 @@ function Footer() {
     <div className="font-monospace m-auto w-3/4 md:max-w-4xl items-baseline ">
         <div className='w-full h-0.5 bg-nord3'></div>
         
-        <span className='flex justify-center'><a>NEW DESIGN</a></span>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-x-4">
+        <span className='hidden'> {/* flex justify-center  */} <a>NEW DESIGN</a></span>
+        <div class='hidden'> {/* grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-x-4 */}
             <div className='flex flex-row justify-center mb-4 space-x-4 md:ml-auto'>
                 <div className='flex text-nord4'>
                     <Link href="/">
@@ -65,15 +65,10 @@ function Footer() {
             </div>
         </div>
         
-        
 
 
 
-
-
-
-
-        <span className='flex justify-center'><a>OLD DESIGN</a></span>
+        <span className='hidden'> {/* flex justify-center  */} <a>OLD DESIGN</a></span>
         <div className='my-8 w-2/4 mx-auto'>
             <div className='mb-4 flex justify-center space-x-4'>
                 <div className='flex text-nord4'>
