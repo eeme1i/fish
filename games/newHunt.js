@@ -153,7 +153,7 @@ export default class Game{
     }
     
     #checkIfLastTile(){
-        if (this.notCheked <= 1){
+        if (this.notCheked.length <= 1){    // if only one piece left => end game
             this.#revealAll();
             this.#updateScore();
             this.state = GameStates.ended;
