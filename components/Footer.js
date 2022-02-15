@@ -16,7 +16,7 @@ function Footer() {
                     </Link>
                 </div>
                 <div className='flex text-nord4'>
-                    <Link href="/">
+                    <Link href="/login">
                         <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
                         Kirjautumissivu
                         </a>
@@ -79,7 +79,7 @@ function Footer() {
                     </Link>
                 </div>
                 <div className='flex text-nord4'>
-                    <Link href="/">
+                    <Link href="/login">
                     <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
                     Kirjautumissivu
                     </a>

@@ -13,9 +13,7 @@ export default function Home() {
         <meta name="description" content="Porin Lukion (epä)viralliset kotisivut" />
         <link rel="icon" href="" />
       </Head>
-
       <Header />
-
       <div className='font-sans w-auto m-auto lg:w-2/4 sm:w-3/4'>
         <div className='m-8'>
         <h1 className='text-4xl font-bold text-nord4'>Porin Lukio</h1>
