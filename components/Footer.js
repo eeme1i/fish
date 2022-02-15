@@ -132,6 +132,11 @@ function Footer() {
                 </a>
                 </Link>
             <div className=''>
+                <Link href='mailto:eeruoh@gmail.com'>
+                <a className='hover:underline'>s-posti</a>
+                </Link>
+            </div>
+            <div className=''>
                 <p>Tämä sivusto ei kerää tai tallenna minkäänlaista dataa sinusta.</p>
             </div>
         </div>
