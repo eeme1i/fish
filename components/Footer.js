@@ -6,7 +6,7 @@ function Footer() {
         <div className='w-full h-0.5 bg-nord3'></div>
         
         <span className='hidden'> {/* flex justify-center  */} <a>NEW DESIGN</a></span>
-        <div class='hidden'> {/* grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-x-4 */}
+        <div className='hidden'> {/* grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-x-4 */}
             <div className='flex flex-row justify-center mb-4 space-x-4 md:ml-auto'>
                 <div className='flex text-nord4'>
                     <Link href="/">
