@@ -20,7 +20,7 @@ export default function Home(){
                         <p>Porin lukion viralliset nettisivut</p>
                         <a className='ml-auto underline' href="https://www.pori.fi/kasvatus-ja-koulutus/lukio/porin-lukio">Linkki</a>
                     </div>
-                    <div className='flex flex-row text-red-700'>
+                    <div className='flex flex-row text-red-400'>
                         <p>Tutkimuksia internetkäyttäytymisesta</p>
                         <a className='ml-auto underline' href="https://jyx.jyu.fi/bitstream/handle/123456789/76926/URN%3aNBN%3afi%3ajyu-202107014114.pdf?sequence=1&isAllowed=y">linkki</a>
                     </div>                    
