@@ -7,7 +7,7 @@ function Footer() {
         
         <span className='hidden'> {/* flex justify-center  */} <a>NEW DESIGN</a></span>
         <div className='hidden'> {/* grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-x-4 */}
-            <div className='flex flex-row justify-center mb-4 space-x-4 md:ml-auto'>
+            <div className='flex flex-row justify-center mb-4 space-x-4 md:ml-auto '>
                 <div className='flex text-nord4'>
                     <Link href="/">
                         <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
@@ -73,54 +73,61 @@ function Footer() {
             <div className='mb-4 flex justify-center space-x-4'>
                 <div className='flex text-nord4'>
                     <Link href="/">
-                    <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
-                    Koti
-                    </a>
+                        <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
+                        Koti
+                        </a>
                     </Link>
                 </div>
                 <div className='flex text-nord4'>
                     <Link href="/login">
-                    <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
-                    Kirjautumissivu
-                    </a>
+                        <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
+                        Kirjautumissivu
+                        </a>
                     </Link>
                 </div>
                 <div className='flex text-nord4'>
                     <Link href="/treasureHunt">
-                    <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
-                    Aarrejahti
-                    </a>
+                        <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
+                        Aarrejahti
+                        </a>
                     </Link>
                 </div>
                 <div className='flex text-nord4'>
                     <Link href="/notFound">
-                    <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
-                    404
-                    </a>
+                        <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
+                        404
+                        </a>
                     </Link>
                 </div>
                 
             </div>
             <div className='grid-1 flex justify-center space-x-4'>
                 <div className='flex text-nord4'>
+                    <Link href="/usefulLinks">
+                        <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
+                        Linkkejä
+                        </a>
+                    </Link>
+                </div>
+                <div className='flex text-nord4'>
                     <Link href="/message">
-                    <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
-                    Viesti
-                    </a>
+                        <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
+                        Viesti
+                        </a>
                     </Link>
                 </div>
                 <div className='flex text-nord4'>
                     <Link target="_blank" rel="noreferrer" href="https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/releases">
-                    <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
-                    MEK
-                    </a>
+                        <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
+                        MEK
+                        </a>
                     </Link>
                 </div>
                 <div className='flex text-nord4'>
                     <Link  target="_blank" rel="noreferrer" href="https://github.com/eeme1i/fish">
-                    <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
-                    Github
-                    </a>
+                        <a className='px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3'>
+                        Github
+                        </a>
                     </Link>
                 </div>
             </div>
