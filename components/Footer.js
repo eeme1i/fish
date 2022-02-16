@@ -133,7 +133,7 @@ function Footer() {
             </div>
         </div>
             <div className='mx-8 pb-8 text-nord4'>
-                <Link href="login">
+                <Link href="/">
                 <a className=''>
                 porinlukio.fi
                 </a>
