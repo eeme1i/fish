@@ -4,10 +4,12 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import List from "../components/List";
+import Breaker from "../components/Breaker";
 
 export default function Home() {
   return (
-    <div className="bg-nord0 h-screen">
+    <div className="bg-nord0 h-full min-h-screen">
       <Head>
         <title>Porin Lukio - Koti</title>
         <meta
@@ -18,7 +20,7 @@ export default function Home() {
       </Head>
       <Header />
 
-      <div className="font-sans w-3/4 md:max-w-4xl m-auto">
+      <div className="font-sans w-full sm:w-3/4 md:max-w-4xl m-auto">
         <div className="m-8">
           <h1 className="text-4xl font-bold text-nord4">Porin Lukio</h1>
         </div>
@@ -39,6 +41,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="mx-auto w-full sm:w-3/4 md:max-w-4xl">
+        <Breaker />
+      </div>
+      <List />
       <Footer />
     </div>
   );
