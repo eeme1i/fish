@@ -9,15 +9,15 @@ export default function Home() {
       <Header />
       <p className="w-min mx-auto text-5xl underline p-10">Galleria</p>
       <div className=" w-3/4 md:max-w-4xl mx-auto flex flex-col  space-y-4 py-4 min-h-screen">
-        <span className="">
+        <p className="">
           "Nyt Tuomas se peli pois, tai pääset seuraavaksi käytävään pelaamaan"
           <br />
           -Hanna välimäki 16.2.2022
-        </span>
-        <span>
+        </p>
+        <p>
           "Kirjoittakaapa tällanen 10 000 merkin essee huomiseksi" <br />
           -Kava, aina
-        </span>
+        </p>
       </div>
       <Footer />
     </div>
