@@ -2,52 +2,62 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import List from "../components/List";
-import Breaker from "../components/Breaker";
 
 export default function Home() {
   return (
-    <div className="bg-nord0 h-full min-h-screen">
+    <div className="">
       <Head>
-        <title>Porin Lukio - Koti</title>
-        <meta
-          name="description"
-          content="Porin Lukion (epä)viralliset kotisivut"
-        />
-        <link rel="icon" href="" />
+        <title>Kirjaudu sisään</title>
+        <meta name="description" content="" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
 
-      <div className="font-sans w-full sm:w-3/4 md:max-w-4xl m-auto">
-        <div className="m-8">
-          <h1 className="text-4xl font-bold text-nord4">Porin Lukio</h1>
-        </div>
-        <div className="my-16 text-xl font-bold flex justify-center space-x-8 text-nord4">
-          <div className="hover:scale-110 transition ease-in-out hover:bg-nord3">
-            <Link className="" href="/login">
-              <a className="px-8 py-8 bg-nord1 rounded-2xl transition ease-in-out hover:bg-nord3">
-                kirjautumissivu
-              </a>
-            </Link>
+      <div className="font-sans text-sm">
+        <div className="flex">
+          <div className=" w-full h-screen flex">
+            <img
+              className="flex align-top object-cover w-full"
+              src="https://fs.pori.fi/adfs/portal/illustration/illustration.jpg?id=534A5BC1E0A663601F9C836C91F8DB01E9569EC040453A397E24B8EE2D8AA210"
+            />
           </div>
-          <div className="hover:scale-110 transition ease-in-out hover:bg-nord3">
-            <Link className="" href="/treasureHunt">
-              <a className="px-8 py-8 bg-nord1 rounded-2xl transition ease-in-out hover:bg-nord3">
-                aarrejahtipeli
-              </a>
-            </Link>
+          <div className="p-16 min-w-[500px]">
+            <img
+              className="pb-28"
+              src="https://fs.pori.fi/adfs/portal/logo/logo.png?id=CB39F2622BCF19EECF330BAF9997244FD33E86E387795B1DE0994342DC3A8A72"
+            />
+            <div bg>
+              <p className="pb-10">Kirjaudu sisään</p>
+              <div className="pb-10">
+                <input
+                  className="mb-2 pl-1 py-0.5 border border-gray-400 w-full"
+                  placeholder="joku@example.com"
+                  type="email"
+                  id="email"
+                  name="email"
+                />
+                <input
+                  className="border pl-1 py-0.5 border-gray-400 w-full"
+                  placeholder="Salasana"
+                  type="password"
+                  id="password"
+                  name="password"
+                />
+              </div>
+              <Link href="/home">
+                <a className="bg-[#0067b8] text-white px-5 py-1 hover:opacity-25">
+                  Kirjaudu sisään
+                </a>
+              </Link>
+            </div>
+            <div className="absolute bottom-5 hover:cursor-default">
+              <Link href="/" className="">
+                <p className="text-xs text-gray-500">© 2022 porinlukio.fi</p>
+              </Link>
+            </div>
+            {/* <p className='absolute bottom-5 text-xs text-gray-500'>© 2018 Microsoft</p> //can't really have this, is against law probably */}
           </div>
         </div>
       </div>
-      <div className="mx-auto w-full sm:w-3/4 md:max-w-4xl">
-        <Breaker />
-      </div>
-      <List />
-      <Footer />
     </div>
   );
 }
-
-// test commit

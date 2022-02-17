@@ -2,8 +2,8 @@ import Link from "next/link";
 
 function List() {
   return (
-    <div className="w-3/4 mt-8 mb-16 m-auto text-nord4 font-mono md:max-w-4xl text-xl md:text-xl">
-      <p className="flex mx-auto text-xl md:text-2xl py-10 underline">
+    <div className="w-3/4 my-16 m-auto text-nord4 font-mono md:max-w-4xl text-xl md:text-xl">
+      <p className="flex mx-auto text-xl md:text-2xl pb-8 underline">
         Mielenkiintoisia tai hyödyllisiä linkkejä
       </p>
       <div className="sm:flex flex-col w-full m-auto space-y-2">
