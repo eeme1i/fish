@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="bg-nord0 h-screen">
       <Head>
-        <title>Porin Lukio - Home</title>
+        <title>Porin Lukio - Koti</title>
         <meta
           name="description"
           content="Porin Lukion (epä)viralliset kotisivut"
