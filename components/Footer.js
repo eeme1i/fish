@@ -15,7 +15,7 @@ function Footer() {
         {/* grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-x-4 */}
         <div className="flex flex-row justify-center mb-4 space-x-4 md:ml-auto ">
           <div className="flex text-nord4">
-            <Link href="/">
+            <Link href="/home">
               <a className="px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3">
                 Koti
               </a>
@@ -86,7 +86,7 @@ function Footer() {
       <div className="my-8 w-2/4 mx-auto">
         <div className="mb-4 flex justify-center space-x-4">
           <div className="flex text-nord4">
-            <Link href="/">
+            <Link href="/home">
               <a className="px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3">
                 Koti
               </a>
@@ -116,7 +116,7 @@ function Footer() {
         </div>
         <div className="grid-1 flex justify-center space-x-4">
           <div className="flex text-nord4">
-            <Link href="/l">
+            <Link href="/list">
               <a className="px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3">
                 Linkkejä
               </a>
@@ -159,11 +159,13 @@ function Footer() {
         </Link>
         <div className="">
           <Link href="mailto:eeruoh@gmail.com">
-            <a className="hover:underline">s-posti</a>
+            <a className="hover:underline">Yhteydenotot</a>
           </Link>
         </div>
         <div className="">
-          <p>Tämä sivusto ei kerää tai tallenna minkäänlaista dataa sinusta.</p>
+          <Link href="/pp.txt">
+            <a>Privacy Policy</a>
+          </Link>
         </div>
       </div>
     </div>
