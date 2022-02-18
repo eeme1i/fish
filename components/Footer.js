@@ -163,8 +163,8 @@ function Footer() {
           </Link>
         </div>
         <div className="">
-          <Link href="/pp.txt">
-            <a className='hover:underline'>Privacy Policy</a>
+          <Link href="/pp">
+            <a className="hover:underline">Privacy Policy</a>
           </Link>
         </div>
       </div>

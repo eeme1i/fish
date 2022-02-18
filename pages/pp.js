@@ -53,8 +53,8 @@ export default function Home() {
         website visitors to the Google Fonts API. Requests to the Google Fonts
         API are made to resource-specific domains, such as fonts.googleapis.com
         or fonts.gstatic.com. This means your font requests are separate from
-        and don't contain any credentials you send to google.com while using
-        other Google services that are authenticated, such as Gmail.
+        and don&apos;t contain any credentials you send to google.com while
+        using other Google services that are authenticated, such as Gmail.
         <br />
         <br />
         In order to serve fonts quickly and efficiently with the fewest
@@ -77,7 +77,7 @@ export default function Home() {
         popular font families are and are published on our analytics page. We
         use data from Google’s web crawler to detect which websites use Google
         fonts. To learn more about the information Google collects and how it is
-        used and secured, see Google's Privacy Policy.
+        used and secured, see Google&apos;s Privacy Policy.
         <br />
         <br />
         <br />
