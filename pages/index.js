@@ -50,7 +50,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="absolute bottom-5 hover:cursor-default">
-              <Link href="/" className="">
+              <Link href="/home" className="">
                 <p className="text-xs text-gray-500">© 2022 porinlukio.fi</p>
               </Link>
             </div>
