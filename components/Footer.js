@@ -155,7 +155,7 @@ function Footer() {
       </div>
       <div className="mx-8 pb-8 text-nord4">
         <Link href="/">
-          <a className="">porinlukio.fi</a>
+          <a className="hover:underline">porinlukio.fi</a>
         </Link>
         <div className="">
           <Link href="mailto:eeruoh@gmail.com">
@@ -164,7 +164,7 @@ function Footer() {
         </div>
         <div className="">
           <Link href="/pp">
-            <a>Privacy Policy</a>
+            <a className="hover:underline">Privacy Policy</a>
           </Link>
         </div>
       </div>
