@@ -163,7 +163,7 @@ function Footer() {
           </Link>
         </div>
         <div className="">
-          <Link href="/pp.txt">
+          <Link href="/pp">
             <a>Privacy Policy</a>
           </Link>
         </div>
