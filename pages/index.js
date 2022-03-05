@@ -14,11 +14,7 @@ export default function Home() {
 
       <div className="font-sans text-sm">
         <div className="flex">
-          <div className=" w-full h-screen flex">
-            <img
-              className="flex align-top object-cover w-full"
-              src="https://fs.pori.fi/adfs/portal/illustration/illustration.jpg?id=534A5BC1E0A663601F9C836C91F8DB01E9569EC040453A397E24B8EE2D8AA210"
-            />
+          <div className=" w-full h-screen flex bg-cover bg-[url('/illustration.jpg')]">
           </div>
           <div className="p-16 min-w-[500px]">
             <img
