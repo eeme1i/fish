@@ -5,12 +5,15 @@ import GameStates from "../games/gameStates.js";
 import Game from "../games/newHunt.js";
 import PointCounter from "../games/pointCounter.js";
 import { updateElemText } from "../games/helpers.js";
+import { ShittyGameBlock } from "../components/GameComponents";
+
 
 const tileDisplayName = "Ruutu ";
 const tileIdBody = "treasurePanel"
 // tileAmount, idBody, tileDisplayName, difficulty = 3, scoreDisplay = undefined
 let currentGame = new Game(8, tileIdBody, tileDisplayName, 3, "scoreDisplay");
 let totalPointsCounter = new PointCounter();
+
 
 
 
@@ -105,9 +108,14 @@ export default function Home(){
                 </div>
             </div>
             <Footer/>
+            <ShittyGameBlock/>
         </div>
     )
 }
+
+
+
+
 
 function startnewgame(){
     // initalize new
