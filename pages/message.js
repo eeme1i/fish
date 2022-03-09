@@ -7,7 +7,7 @@ import Footer from "../components/Footer.js";
 
 export default function Home() {
   return (
-    <div className='bg-blue-500 min-h-screen w-full '>
+    <div className='bg-red-500 min-h-screen w-full '>
       <Head>
         <title>Porin Lukio - Viesti</title>
         <meta name="description" content="" />
