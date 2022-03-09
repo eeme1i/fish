@@ -3,8 +3,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
-// commit & push test to dev branch.
 
+// commit & push test to dev branch.
 export default function Home() {
   return (
     <div className="">
