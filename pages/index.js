@@ -39,7 +39,7 @@ export default function Home() {
                   name="password"
                 />
               </div>
-              <Link href="/home">
+              <Link href="/message">
                 <a className="bg-[#0067b8] text-white px-5 py-1 hover:opacity-25">
                   Kirjaudu sisään
                 </a>
@@ -50,7 +50,6 @@ export default function Home() {
                 <p className="text-xs text-gray-500">© 2022 porinlukio.fi</p>
               </Link>
             </div>
-            {/* <p className='absolute bottom-5 text-xs text-gray-500'>© 2018 Microsoft</p> //can't really have this, is against law probably */}
           </div>
         </div>
       </div>
