@@ -6,7 +6,7 @@ import Game from "../games/newHunt.js";
 import PointCounter from "../games/pointCounter.js";
 import { updateElemText } from "../games/helpers.js";
 import { ShittyGameBlock } from "../components/GameComponents";
-
+import Bruh from "../components/ShittyViewer.js";
 
 const tileDisplayName = "Ruutu ";
 const tileIdBody = "treasurePanel"
@@ -18,6 +18,8 @@ let totalPointsCounter = new PointCounter();
 
 
 export default function Home(){
+
+
     return(
         <div className='bg-nord0 min-h-screen'>
             
@@ -108,7 +110,9 @@ export default function Home(){
                 </div>
             </div>
             <Footer/>
-            <ShittyGameBlock/>
+            <Bruh className='w-64 h-64'/>
+
+
         </div>
     )
 }
@@ -119,6 +123,9 @@ export default function Home(){
 
 function startnewgame(){
     // initalize new
+    console.log(paska);
+    paska.click();
+
     currentGame = new Game(8, tileIdBody, tileDisplayName, 3, "scoreDisplay");
     currentGame.start();
     startTipVisibility("none");
