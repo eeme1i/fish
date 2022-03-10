@@ -1,41 +1,59 @@
 import { useState } from 'react';
 
-/*
 
-function Child(props){
-    console.log("Child Rendered");
-    return(
-        <div>
-            <h1>Child Name={props.name}</h1>
+export default function Bruh() {
+    return (
+        <div onClick={() => m.UpdateState()}>
+            {m.Mehmed()}
         </div>
     );
 }
-*/
 
-class Animals{
+export class Animals{
     constructor() {
         this.state = 0;
-        this.öö = undefined;
+    }
+
+    // get element
+    Mehmed(){
+        const [Count2, setCount2]=useState(0);
+        this.Click = setCount2;
+        return(
+            <div className='h-64 w-64' onClick={()=>setCount2(this.GetNextView())}>
+                {this.SetState(Count2)}
+                {this.#element()}
+            </div>
+        )
+    }
+
+    // update view
+    UpdateState(){
+        (this.Click)(this.state); 
+    }
+
+    // set new state => update with this.UpdateState()
+    // only set 0-2
+    SetState(num){ 
+        this.state = num;
+    }
+
+    // show next view
+    SetNextView(){
+        (this.Click)(this.GetNextView()); 
     }
     
-    getState(){
+    // hop to next view
+    GetNextView(){
         if (this.state >= 2){
             this.state = 0;
             return this.state;
         }
-        this.state = this.state + 1;
-        return (this.state);
-    }
-
-    setState(num){
-        this.state = num;
-    }
-
-    update(){
         this.state ++;
+        return this.state;
     }
 
-    element() {
+    // private change paths to get new images
+    #element() {
         if (this.state == 0){
             return (
                 <div className="aspect-h-1 aspect-w-1 bg-[url('/images/mo-es.png')] bg-cover"/>
@@ -51,36 +69,10 @@ class Animals{
         )
     }
 
-    Mehmed(){
-        const [Count2, setCount2]=useState(0);
-        this.Click = setCount2;
-        return(
-            
-            <div className='h-64 w-64' onClick={()=>setCount2(this.getState())}>
-                {this.setState(Count2)}
-                {this.element()}
-                
-            </div>
-        )
-    }
-    //<div onClick={() => (this.Click)(this.getState())}>oooooooooo</div>
-
-    UpdateState(){
-        (this.Click)(this.getState());
-    }
-
+    //<div onClick={() => (this.Click)(this.GetNextView())}>oooooooooo</div>
 }
 
 const m = new Animals();
 
-//function Mehmed(){}
   
-export default function Bruh() {
-    return (
-        <div>
-            <button onClick={m.loom}>öööööööööö</button>
-            {m.Mehmed()}
-            <div onClick={() => m.UpdateState()}>oooooooooo</div>
-        </div>
-    );
-}
+

@@ -8,13 +8,18 @@ import { updateElemText } from "../games/helpers.js";
 import { ShittyGameBlock } from "../components/GameComponents";
 import Bruh from "../components/ShittyViewer.js";
 
+import { Animals } from "../components/ShittyViewer.js";
+
+
 const tileDisplayName = "Ruutu ";
 const tileIdBody = "treasurePanel"
 // tileAmount, idBody, tileDisplayName, difficulty = 3, scoreDisplay = undefined
 let currentGame = new Game(8, tileIdBody, tileDisplayName, 3, "scoreDisplay");
 let totalPointsCounter = new PointCounter();
 
+// const TileImg1 = new Animals 
 
+const tileImg1 = new Animals();
 
 
 export default function Home(){
@@ -110,21 +115,26 @@ export default function Home(){
                 </div>
             </div>
             <Footer/>
-            <Bruh className='w-64 h-64'/>
-
-
+            <div className='w-64 h-64'>
+                His got some power
+                {tileImg1.Mehmed()}
+            </div>
         </div>
     )
 }
 
-
+/* 
+commands
+    tileImg1.SetState(2);
+    tileImg1.UpdateState();
+*/
 
 
 
 function startnewgame(){
     // initalize new
-    console.log(paska);
-    paska.click();
+
+
 
     currentGame = new Game(8, tileIdBody, tileDisplayName, 3, "scoreDisplay");
     currentGame.start();
