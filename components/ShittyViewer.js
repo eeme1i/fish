@@ -15,6 +15,7 @@ function Child(props){
 class Animals{
     constructor() {
         this.state = 0;
+        this.öö = undefined;
     }
     
     getState(){
@@ -49,25 +50,37 @@ class Animals{
             <div className="aspect-h-1 aspect-w-1 bg-[url('/images/tulee20e.png')] bg-cover"/>
         )
     }
+
+    Mehmed(){
+        const [Count2, setCount2]=useState(0);
+        this.Click = setCount2;
+        return(
+            
+            <div className='h-64 w-64' onClick={()=>setCount2(this.getState())}>
+                {this.setState(Count2)}
+                {this.element()}
+                
+            </div>
+        )
+    }
+    //<div onClick={() => (this.Click)(this.getState())}>oooooooooo</div>
+
+    UpdateState(){
+        (this.Click)(this.getState());
+    }
+
 }
 
+const m = new Animals();
 
-function Mehmed(){
-    const [Count2, setCount2]=useState(0);
-    const m = new Animals();
-    
-    return(
-        
-        <div className='h-64 w-64 '>
-            <button id='paska' onClick={()=>setCount2(m.getState())}>
-                asdasd
-            </button>
-            {m.setState(Count2)}
-            {m.element()}
-        </div>
-    )
-}
+//function Mehmed(){}
   
 export default function Bruh() {
-    return Mehmed();
+    return (
+        <div>
+            <button onClick={m.loom}>öööööööööö</button>
+            {m.Mehmed()}
+            <div onClick={() => m.UpdateState()}>oooooooooo</div>
+        </div>
+    );
 }
