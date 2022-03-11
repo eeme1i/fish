@@ -1,14 +1,15 @@
 // Copyright Henri Vainio 2022
-import GameStates from "./gameStates";
+import GameStates, { ImgStates } from "./gameStates";
 import { getNumbers, getRandom, arrayRemoveNum, updateElemText }  from "./helpers";
 import PointCounter from "./pointCounter";
-
+import { updateImgsStart, updateSingleImg} from "./helpers";
 const foundTreasureMsg = "aarre";
 const foundBombMsg = "poks";
 const foundEmptyMsg = "tyhjä";
 
 const treasureGetPoints = 100;
-const bombLosePoints = 30;
+const bombLosePoints = 38;
+
 
 
 
@@ -17,7 +18,7 @@ const bombLosePoints = 30;
 
 export default class Game{
     // input (int, str, int)
-    constructor(tileAmount, idBody, tileDisplayName, difficulty = 3, scoreDisplay = undefined){
+    constructor(tileAmount, idBody, tileDisplayName, tileImgs, difficulty = 3, scoreDisplay = undefined){
         let numbers = getNumbers(getRandom(8), difficulty + 1, tileAmount)  // get 1 more for treasure
         this.tiles = tileAmount;
         this.treasure = numbers[0];
@@ -28,6 +29,7 @@ export default class Game{
         this.scoreDisplay = scoreDisplay;
         this.tileDisplayName = tileDisplayName;
         this.state = GameStates.waiting;
+        this.#setUpArrays(tileImgs);
     }
 
 
@@ -49,7 +51,10 @@ export default class Game{
         }
 
         this.notCheked = arrayRemoveNum(tileIndex, this.notCheked);
-        if(this.#checkNumber(tileIndex) === true){
+
+        const isWinning = this.#checkNumber(tileIndex);
+
+        if(isWinning === true){
             // treasure
             this.#tileStateTreasure(tileIndex);
             this.#revealAll();
@@ -58,7 +63,7 @@ export default class Game{
             return;
         }
         
-        if(this.#checkNumber(tileIndex) === false){
+        if(isWinning === false){
             // bomb
             this.#tileStateBoom(tileIndex);
             this.#checkIfLastTile();
@@ -72,6 +77,8 @@ export default class Game{
     // input (int, str)
     resetGame(tileAmount, tileDisplayName){
         // put tiles to "new game" state
+        updateImgsStart(this.tileImgs, ImgStates.start);
+
         for(let i = 0; i <= tileAmount; i++){
             document.getElementById(this.tileIdBody + i).innerText = tileDisplayName + (i + 1);   // shift name by 1
         }
@@ -83,22 +90,51 @@ export default class Game{
     }
     
 
+
+    showAllTileText(){
+
+        for (let i = 0; i <= this.tiles; i++){
+            this.#showTileText(i);
+        }
+    }
+    
+    hideAllTileText(){
+        for (let i = 0; i <= this.tiles; i++){
+            this.#hideTileText(i);
+        }
+    }
+
+
+
+
+
     /// private methods 
+
+    #setUpArrays(tileImgs){
+        if (Array.isArray(tileImgs)){
+            this.tileImgs = tileImgs;
+            return;
+        }
+        throw new Error("[NewHunt.Game.#setUpArrays] tileImgs is not array");
+    }
 
     // input (int)
     #tileStateTreasure(tileIndex){
         this.#revealTile(tileIndex, foundTreasureMsg);
+        this.#showImage(tileIndex);
         this.score.add(treasureGetPoints);
     }
 
     // input (int)
     #tileStateBoom(tileIndex){
         this.#revealTile(tileIndex, foundBombMsg);
+        this.#showImage(tileIndex);
         this.score.subtract(bombLosePoints)
     }
 
     // input (int)
     #tileStateEmpty(tileIndex){
+        this.#showImage(tileIndex);
         this.#revealTile(tileIndex, foundEmptyMsg);
     }
 
@@ -116,13 +152,23 @@ export default class Game{
         }
     }
 
+
+
     #revealAll(){
         while (this.notCheked.length > 0){
             let index = this.notCheked[0];
             let text = this.#getTileText(index);
             this.notCheked.shift();
             this.#revealTile(index, text);
+            this.#showImage(index);
         }
+    }
+
+    // input (int)
+    #showImage(index){
+        const setState = this.#getTileImgState(index);
+        updateSingleImg(this.tileImgs[index], setState);
+        this.#updateTileTextVisibility(index, setState);
     }
 
     // input (int)
@@ -134,6 +180,17 @@ export default class Game{
             return foundBombMsg;
         }
         return foundEmptyMsg;
+    }
+    
+    // input (int)
+    #getTileImgState(tileIndex){
+        if (this.#checkNumber(tileIndex) === true){
+            return ImgStates.win;
+        }
+        if(this.#checkNumber(tileIndex) === false){
+            return ImgStates.lose;
+        }
+        return ImgStates.empty;
     }
 
     //input (int, str)
@@ -157,6 +214,13 @@ export default class Game{
             this.#revealAll();
             this.#updateScore();
             this.state = GameStates.ended;
+        }
+    }
+
+    #updateTileTextVisibility(index, setState){
+        if (setState == ImgStates.win || setState == ImgStates.lose){
+            this.#hideTileText(index);
+            return;
         }
     }
 
