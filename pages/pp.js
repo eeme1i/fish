@@ -13,9 +13,12 @@ export default function Home() {
       </Head>
 
       <div className="p-8 text-black content-center font-mono xl:w-2/4 text-xl">
-        Tämä sivusto ei kerää tai tallenna minkäänlaista dataa sinusta.
+        
+        Tämä sivusto ei ketää tai tallenna dataa, jota voitaisiin liittää yksittäiseen käyttäjään.
         <br />
-        Me emme nää tai tiedä kuka, missä ja milloin käyttää sivustoamme.
+        Näemme ainoastaan sivun katsojakerrat, käyttäjämäärät, keskimääräisen vierailuajan sekä summittaisen sijainnin (noi kaupungin tarkkuudella).
+        Näitä tietoja ei voi liittää yksittäiseen käyttäjään, emmekä voi tietää kuka olet tai mitä tietoja olet sivustolle syöttänyt tai katsellut.
+        Sivuston kävijädata saadaan käyttämällä Googlen Analytics - palvelua.
         <br />
         <br />
         <br />

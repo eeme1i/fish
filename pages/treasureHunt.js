@@ -35,10 +35,6 @@ export default function Home(){
                 
                 <div className=' col-span-2  py-[3%] flex flex-col p-[5%]  '>
 
-                    
-                    
-                    
-                    
                     <div className='grid grid-cols-3 gap-2 '>
                         {/* every button uses same "name body" and "display name body", onClick needs to use lambda function */}
                         <button id="treasurePanelButton0" onClick={() => guessTile(0)} className='w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105'>

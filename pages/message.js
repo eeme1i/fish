@@ -7,7 +7,7 @@ import Footer from "../components/Footer.js";
 
 export default function Home() {
   return (
-    <div className='bg-red-500 min-h-screen w-full '>
+    <div className='bg-red-500 min-h-screen w-full'>
       <Head>
         <title>Porin Lukio - Viesti</title>
         <meta name="description" content="" />
@@ -16,9 +16,14 @@ export default function Home() {
 
       <div className='flex flex-row min-h-screen'>
         <div className="p-8 text-white content-center font-mono w-2/3 md:w-1/2 text-xl">
+          <p className='text-3xl mb-5 w-80 mx-auto md:w-96'>SINUA ON HÖYNÄYTETTY!</p>
           <p className="">
-            Olisit juuri voinut lähettää sähköpostiosoitteesi ja salasanasi
-            hakkerille. Meitä se ei kuitenkaan kiinnosta, mutta toivoisimme, että
+            <a className='underline'>
+            Olisit juuri voinut lähettää sähköpostiosoitteesi ja salasanasi hakkerille.
+            <br />
+            <br />
+            </a>
+            Meitä se ei kuitenkaan kiinnosta, mutta toivoisimme, että
             pitäisitte paremmin huolta tietoturvastanne.
             <br />
             <br />
@@ -35,7 +40,17 @@ export default function Home() {
             </a>
             <br />
             <br />
-            Tämä sivusto ei kerää tai tallenna minkäänlaista dataa sinusta.
+            <span>
+            Tämä sivusto kerää kävijädataa käyttäen Googlen Analytics -palvelua.
+            <br/>
+            <br/>
+            Mitään sivuston keräämää dataa ei voi liittää käyttäjän oikeaan henkilöllisyyteen.
+            <br/>
+            <br/>
+            <a className='underline'>
+            Sivusto ei kerää mitään tietoja, joita käyttäjä on syöttänyt tekstikenttiin.
+            </a>
+            </span>
             <br />
             <br />
             Sivuston lähdekoodi:{" "}
