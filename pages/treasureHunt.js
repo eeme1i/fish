@@ -5,21 +5,25 @@ import GameStates from "../games/gameStates.js";
 import Game from "../games/newHunt.js";
 import PointCounter from "../games/pointCounter.js";
 import { updateElemText } from "../games/helpers.js";
-import { ShittyGameBlock } from "../components/GameComponents";
-import Bruh from "../components/ShittyViewer.js";
+import { ImageViever } from "../components/NiceShinyViewer.js";
 
-import { Animals } from "../components/ShittyViewer.js";
+const tileImg0 = new ImageViever();
+const tileImg1 = new ImageViever();
+const tileImg2 = new ImageViever();
+const tileImg3 = new ImageViever();
+const tileImg4 = new ImageViever();
+const tileImg5 = new ImageViever();
+const tileImg6 = new ImageViever();
+const tileImg7 = new ImageViever();
+const tileImg8 = new ImageViever();
 
+const tileImgs = [tileImg0, tileImg1, tileImg2, tileImg3, tileImg4, tileImg5, tileImg6, tileImg7, tileImg8];
 
 const tileDisplayName = "Ruutu ";
 const tileIdBody = "treasurePanel"
-// tileAmount, idBody, tileDisplayName, difficulty = 3, scoreDisplay = undefined
-let currentGame = new Game(8, tileIdBody, tileDisplayName, 3, "scoreDisplay");
+// tileAmount, idBody, tileDisplayName, tileImgs[], difficulty = 3, scoreDisplay = undefined
+let currentGame = new Game(8, tileIdBody, tileDisplayName, tileImgs, 3, "scoreDisplay");
 let totalPointsCounter = new PointCounter();
-
-// const TileImg1 = new Animals 
-
-const tileImg1 = new Animals();
 
 
 export default function Home(){
@@ -48,46 +52,55 @@ export default function Home(){
                     <div className='grid grid-cols-3 gap-2 '>
                         {/* every button uses same "name body" and "display name body", onClick needs to use lambda function */}
                         <button id="treasurePanelButton0" onClick={() => guessTile(0)} className='w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105'>
+                            {tileImg0.GetImage()}
                             <p className="flex justify-center items-center">
                                 <a id={tileIdBody + 0}> {tileDisplayName + 1} </a>
                             </p>
                         </button>
                         <button id="treasurePanelButton1" onClick={() => guessTile(1)} className='w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105'>
+                            {tileImg1.GetImage()}
                             <p className="flex justify-center items-center">
                                 <a id={tileIdBody + 1}> {tileDisplayName + 2} </a>
                             </p>
                         </button>
                         <button id="treasurePanelButton2" onClick={() => guessTile(2)} className='w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105'>
+                            {tileImg2.GetImage()}
                             <p className="flex justify-center items-center">
                                 <a id={tileIdBody + 2}> {tileDisplayName + 3} </a>
                             </p>
                         </button>
                         <button id="treasurePanelButton3" onClick={() => guessTile(3)} className='w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105'>
+                            {tileImg3.GetImage()}
                             <p className="flex justify-center items-center">
                                 <a id={tileIdBody + 3}> {tileDisplayName + 4} </a>
                             </p>
                         </button>
                         <button id="treasurePanelButton4" onClick={() => guessTile(4)} className='w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105'>
+                            {tileImg4.GetImage()}
                             <p className="flex justify-center items-center">
                                 <a id={tileIdBody + 4}> {tileDisplayName + 5} </a>
                             </p>
                         </button>
                         <button id="treasurePanelButton5" onClick={() => guessTile(5)} className='w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105'>
+                            {tileImg5.GetImage()}
                             <p className="flex justify-center items-center">
                                 <a id={tileIdBody + 5}> {tileDisplayName + 6} </a>
                             </p>
                         </button>
                         <button id="treasurePanelButton6" onClick={() => guessTile(6)} className='w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105'>
+                            {tileImg6.GetImage()}
                             <p className="flex justify-center items-center">
                                 <a id={tileIdBody + 6}> {tileDisplayName + 7} </a>
                             </p>
                         </button>
                         <button id="treasurePanelButton7" onClick={() => guessTile(7)} className='w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105'>
+                            {tileImg7.GetImage()}
                             <p className="flex justify-center items-center">
                                 <a id={tileIdBody + 7}> {tileDisplayName + 8} </a>
                             </p>
                         </button>
                         <button id="treasurePanelButton8" onClick={() => guessTile(8)} className='w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105'>
+                            {tileImg8.GetImage()}
                             <p className="flex justify-center items-center">
                                 <a id={tileIdBody + 8}> {tileDisplayName + 9} </a>
                             </p>
@@ -115,10 +128,6 @@ export default function Home(){
                 </div>
             </div>
             <Footer/>
-            <div className='w-64 h-64'>
-                His got some power
-                {tileImg1.Mehmed()}
-            </div>
         </div>
     )
 }
@@ -131,12 +140,12 @@ commands
 
 
 
+
 function startnewgame(){
     // initalize new
-
-
-
-    currentGame = new Game(8, tileIdBody, tileDisplayName, 3, "scoreDisplay");
+    
+    currentGame = new Game(8, tileIdBody, tileDisplayName, tileImgs, 3, "scoreDisplay");
+    currentGame.showAllTileText();
     currentGame.start();
     startTipVisibility("none");
 }

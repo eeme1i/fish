@@ -1,25 +1,19 @@
 import { useState } from 'react';
 
 
-export default function Bruh() {
-    return (
-        <div onClick={() => m.UpdateState()}>
-            {m.Mehmed()}
-        </div>
-    );
-}
 
-export class Animals{
+
+export class ImageViever{
     constructor() {
         this.state = 0;
     }
 
     // get element
-    Mehmed(){
+    GetImage(){
         const [Count2, setCount2]=useState(0);
         this.Click = setCount2;
         return(
-            <div className='h-64 w-64' onClick={()=>setCount2(this.GetNextView())}>
+            <div className='w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl  transition ease-in-out ' onClick={()=>setCount2(this.GetNextView())}>
                 {this.SetState(Count2)}
                 {this.#element()}
             </div>
@@ -56,23 +50,32 @@ export class Animals{
     #element() {
         if (this.state == 0){
             return (
-                <div className="aspect-h-1 aspect-w-1 bg-[url('/images/mo-es.png')] bg-cover"/>
+                <div className="bg-nord2 hover:bg-nord3 bg-cover rounded-xl"/> //bg-[url('/images/mo-es.png')]
             )
         }
         if (this.state == 1){
             return(
-                <div className="aspect-h-1 aspect-w-1 bg-[url('/images/chad04.png')] bg-cover"/>
+                <div className="bg-[url('/textures/boom.png')] bg-cover rounded-xl"/>
             )
         }
         return(
-            <div className="aspect-h-1 aspect-w-1 bg-[url('/images/tulee20e.png')] bg-cover"/>
+            <div className="bg-[url('/textures/treasure.png')] bg-cover rounded-xl"/>
         )
     }
 
     //<div onClick={() => (this.Click)(this.GetNextView())}>oooooooooo</div>
 }
 
-const m = new Animals();
+
+export default function Bruh() {
+    return (
+        <div className='' onClick={() => m.UpdateState()}>
+            {m.GetImage()}
+        </div>
+    );
+}
+
+const m = new ImageViever();
 
   
 
