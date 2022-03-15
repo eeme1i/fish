@@ -13,7 +13,7 @@ export default function Custom404() {
         <Link href="/home">
           <a>
             <img src="/logo.png" />
-            <p className="text-green-600 serif font-bold w-full justify-center flex">
+            <p className="text-green-600 font-bold w-full justify-center flex">
               404 ei löydy!!!!
             </p>
           </a>
