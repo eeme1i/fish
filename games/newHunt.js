@@ -9,7 +9,6 @@ import {
 import reactDom from "react-dom";
 import getImgViewer from "../components/TreasureImg.js";
 import PointCounter from "./pointCounter";
-import { updateImgsStart, updateSingleImg } from "./helpers";
 const foundTreasureMsg = "aarre";
 const foundBombMsg = "poks";
 const foundEmptyMsg = "tyhjä";
