@@ -14,6 +14,12 @@ const tileIdBody = "treasurePanel";
 const imgViewBody = "imageElement";
 // tileAmount, idBody, tileDisplayName, difficulty = 3, scoreDisplay = undefined
 let currentGame = new Game(8, tileIdBody, tileDisplayName, 3, "scoreDisplay");
+
+const tileDisplayName = "Ruutu ";
+const tileIdBody = "treasurePanel"
+// tileAmount, idBody, tileDisplayName, tileImgs[], difficulty = 3, scoreDisplay = undefined
+let currentGame = new Game(8, tileIdBody, tileDisplayName, tileImgs, 3, "scoreDisplay");
+
 let totalPointsCounter = new PointCounter();
 
 const startImage = getImgViewer(0);
@@ -163,11 +169,11 @@ export default function Home() {
 }
 //reactDom.render(elem, document.getElementById('imageElement0'));
 
+
 function startnewgame() {
   // initalize new
   currentGame = new Game(8, tileIdBody, tileDisplayName, 3, "scoreDisplay");
   currentGame.start();
-
   startTipVisibility("none");
 }
 

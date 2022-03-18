@@ -1,0 +1,40 @@
+
+
+export default function Viewer() {
+
+    let state = 1;
+    return (        // initializes and returns view
+        <div id="COMPONENT">
+            {getInside(state)}
+        </div>
+    )    
+}
+
+export function getInside(state){
+    if (state == 1){
+        // is 1
+        return (
+            <div>
+                It's 1
+            </div>
+        )
+    }
+    //else
+    return ( 
+        <div>
+            It's other than 1
+        </div>
+    )
+}
+
+
+export function update(){
+    COMPONENT.render(getInside(newState));
+}
+
+
+
+
+
+
+

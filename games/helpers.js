@@ -1,6 +1,22 @@
 // Helper functions for game mechanics
 
 
+export function updateSingleImg(img, state){
+    img.SetState(state);
+    img.UpdateState();
+}
+
+
+// update all tiles to some state   (array, num (0-2))
+export function updateImgsStart(imgs, state){
+    imgs.forEach(img => {
+        img.SetState(state);
+        img.UpdateState();
+    });
+}
+
+
+
 
 // return num array with amount of random numbers between 0 and maxValue
 // does not include same number twice
