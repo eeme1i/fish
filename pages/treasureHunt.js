@@ -16,7 +16,7 @@ const imgViewBody = "imageElement";
 let currentGame = new Game(8, tileIdBody, tileDisplayName, 3, "scoreDisplay");
 let totalPointsCounter = new PointCounter();
 
-const nufnunf = getImgViewer(0);
+const startImage = getImgViewer(0);
 
 export default function Home() {
   return (
@@ -44,7 +44,7 @@ export default function Home() {
               onClick={() => guessTile(0)}
               className="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105"
             >
-              <div id={imgViewBody + 0}>{nufnunf}</div>
+              <div id={imgViewBody + 0}>{startImage}</div>
               <p className="flex justify-center items-center">
                 <a id={tileIdBody + 0}> {tileDisplayName + 1} </a>
               </p>
@@ -54,7 +54,7 @@ export default function Home() {
               onClick={() => guessTile(1)}
               className="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105"
             >
-              <div id={imgViewBody + 1}>{nufnunf}</div>
+              <div id={imgViewBody + 1}>{startImage}</div>
               <p className="flex justify-center items-center">
                 <a id={tileIdBody + 1}> {tileDisplayName + 2} </a>
               </p>
@@ -64,7 +64,7 @@ export default function Home() {
               onClick={() => guessTile(2)}
               className="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105"
             >
-              <div id={imgViewBody + 2}>{nufnunf}</div>
+              <div id={imgViewBody + 2}>{startImage}</div>
               <p className="flex justify-center items-center">
                 <a id={tileIdBody + 2}> {tileDisplayName + 3} </a>
               </p>
@@ -74,7 +74,7 @@ export default function Home() {
               onClick={() => guessTile(3)}
               className="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105"
             >
-              <div id={imgViewBody + 3}>{nufnunf}</div>
+              <div id={imgViewBody + 3}>{startImage}</div>
               <p className="flex justify-center items-center">
                 <a id={tileIdBody + 3}> {tileDisplayName + 4} </a>
               </p>
@@ -84,7 +84,7 @@ export default function Home() {
               onClick={() => guessTile(4)}
               className="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105"
             >
-              <div id={imgViewBody + 4}>{nufnunf}</div>
+              <div id={imgViewBody + 4}>{startImage}</div>
               <p className="flex justify-center items-center">
                 <a id={tileIdBody + 4}> {tileDisplayName + 5} </a>
               </p>
@@ -94,7 +94,7 @@ export default function Home() {
               onClick={() => guessTile(5)}
               className="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105"
             >
-              <div id={imgViewBody + 5}>{nufnunf}</div>
+              <div id={imgViewBody + 5}>{startImage}</div>
               <p className="flex justify-center items-center">
                 <a id={tileIdBody + 5}> {tileDisplayName + 6} </a>
               </p>
@@ -104,7 +104,7 @@ export default function Home() {
               onClick={() => guessTile(6)}
               className="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105"
             >
-              <div id={imgViewBody + 6}>{nufnunf}</div>
+              <div id={imgViewBody + 6}>{startImage}</div>
               <p className="flex justify-center items-center">
                 <a id={tileIdBody + 6}> {tileDisplayName + 7} </a>
               </p>
@@ -114,7 +114,7 @@ export default function Home() {
               onClick={() => guessTile(7)}
               className="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105"
             >
-              <div id={imgViewBody + 7}>{nufnunf}</div>
+              <div id={imgViewBody + 7}>{startImage}</div>
               <p className="flex justify-center items-center">
                 <a id={tileIdBody + 7}> {tileDisplayName + 8} </a>
               </p>
@@ -124,7 +124,7 @@ export default function Home() {
               onClick={() => guessTile(8)}
               className="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 rounded-xl bg-nord2 transition ease-in-out hover:bg-nord3 hover:scale-105"
             >
-              <div id={imgViewBody + 8}>{nufnunf}</div>
+              <div id={imgViewBody + 8}>{startImage}</div>
               <p className="flex justify-center items-center">
                 <a id={tileIdBody + 8}> {tileDisplayName + 9} </a>
               </p>
