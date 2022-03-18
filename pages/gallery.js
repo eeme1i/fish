@@ -12,12 +12,15 @@ export default function Home() {
         <p className="">
           Nyt Tuomas se peli pois, tai pääset seuraavaksi käytävään pelaamaan
           <br />
-          -Hanna välimäki 16.2.2022
+          -nimeltä mainitsematon opo 16.2.2022
         </p>
         <p>
           Kirjoittakaapa tällanen 10 000 merkin essee huomiseksi
           <br />
-          -Kava, aina
+          -joku äidinkielenopettaja, aina
+        </p>
+        <p>
+          (eräät) nimet sensuroitu yksityisyyden suojaamiseksi
         </p>
       </div>
       <Footer />
