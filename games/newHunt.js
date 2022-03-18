@@ -103,9 +103,7 @@ export default class Game {
   // input (int)
   #setTileImg(tileIndex) {
     const state = this.#getImgState(tileIndex);
-    if (state !== 0) {
-      this.#hideTileText(tileIndex);
-    }
+    this.#hideTileText(tileIndex);
     const elem = getImgViewer(state);
     reactDom.render(
       elem,
@@ -121,7 +119,7 @@ export default class Game {
     if (boolState === false) {
       return 1;
     }
-    return 0;
+    return 3;
   }
 
   // input (int)
