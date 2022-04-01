@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function List() {
   return (
-    <div className="w-3/4 my-16 m-auto text-nord4 font-mono md:max-w-4xl text-xl md:text-xl">
+    <div className="mx-auto text-nord4 font-mono text-xl md:text-xl px-8">
       <p className="flex mx-auto text-xl md:text-2xl pb-8 underline">
         Mielenkiintoisia tai hyödyllisiä linkkejä
       </p>
