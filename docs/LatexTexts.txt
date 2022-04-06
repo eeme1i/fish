@@ -1,5 +1,19 @@
+html version
+
+$\color&#123;white&#125;\begin&#123;cases&#125;
+\tfrac&#123;3&#125;&#123;4&#125;x+y&=y^2\\ \ln 5+\log
+_53x&=\sqrt&#123;x^3&#125;\\ \sin
+\left(4\right)+\sqrt[3]&#123;4y&#125;&=9 \cdot e^&#123;\ln4&#125;
+\end&#123;cases&#125; $
+
+latex for reference
+
 \begin{cases}
 \frac{3}{4}x+y&=y^2\\
 \ln 5+\log _53x&=\sqrt{x^3}\\
-\sin \left(4\right)+\sqrt[3]{4y}&=9
+\sin \left(4\right)+\sqrt[3]{4y}&=9\cdot e^{\ln 4}
 \end{cases}
+
+after run mek3.1.6 preview
+
+system(((3)/(4))*x+y=y^(2),ln(5)+log(3*x,5)=√(x^(3)),sin(4)+root(4*y,3)=9*e^(ln(4)))

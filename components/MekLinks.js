@@ -2,9 +2,14 @@ import Link from "next/link";
 
 function LinkElement({ link, text }) {
   return (
-    <Link href={link}>
-      <a className="hover:underline mx-auto">{text}</a>
-    </Link>
+    <a
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+      className="hover:underline mx-auto"
+    >
+      {text}
+    </a>
   );
 }
 
@@ -31,6 +36,11 @@ export default function MekLinks() {
       <LinkElement
         link="https://docs.google.com/spreadsheets/d/1bi-iejOZ7LSQXTja8hWFj7LcgKMt4z3Aa5pRelak9R8/edit?usp=sharing"
         text="Listaus merkkimuutoksista"
+      />
+
+      <LinkElement
+        link="https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/issues"
+        text="Ilmoita bugeista"
       />
     </div>
   );
