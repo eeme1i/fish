@@ -1,4 +1,4 @@
-import Link from "next/dist/client/link";
+import Link from "next/link";
 
 function LinkElement({ link, text }) {
   return (
@@ -12,6 +12,7 @@ export default function MekLinks() {
   return (
     <div className="pb-8 p-5 text-xl text-nord4 flex flex-col gap-3 w-full">
       <a className="text-4xl underline mx-auto pb-4">Linkkejä</a>
+
       <LinkElement
         link="https://github.com/matikkaeditorinkaantaja"
         text="Github sivu"
