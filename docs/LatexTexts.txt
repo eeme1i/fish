@@ -1,0 +1,5 @@
+\begin{cases}
+\frac{3}{4}x+y&=y^2\\
+\ln 5+\log _53x&=\sqrt{x^3}\\
+\sin \left(4\right)+\sqrt[3]{4y}&=9
+\end{cases}
