@@ -16,7 +16,7 @@ function List() {
             Linkki
           </a>
         </div>
-        <div className="sm:flex sm:flex-row text-red-400">
+        <div className="sm:flex sm:flex-row ">
           <p>Tutkimuksia internetkäyttäytymisesta</p>
           <a
             className="ml-auto hover:underline"
