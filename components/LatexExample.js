@@ -24,7 +24,7 @@ function TextBlock({ elem }) {
 
 function TranslationExample() {
   return (
-    <div className="flex-col lg:flex-row flex justify-center gap-5">
+    <div className="flex-col lg:flex-row flex justify-center gap-5 ">
       {/* add text area in future */}
       <TextBlock elem={<MathEditorView />} />
       <TextBlock elem={<LatexView />} />
@@ -35,7 +35,7 @@ function TranslationExample() {
 
 function MathEditorView() {
   return (
-    <div className="mx-auto  flex flex-col px-5">
+    <div className="mx-auto  flex flex-col px-5 pb-4">
       <a className="underline text-center">Näkymä matikkaeditorissa</a>
       <div className="pl-1.5 text-2xl pt-7">
         {/* text size here resizes latex */}
@@ -63,7 +63,7 @@ function LatexView() {
 
 function MekOutputView() {
   return (
-    <div className="flex flex-col mx-auto gap-5">
+    <div className="flex flex-col mx-auto gap-5 pb-7">
       <div className="flex flex-col text-center">
         <a className="underline">Matikkaeditorinkääntäjän lopputulos</a>
         <a className="text-sm">(voi syöttää suoraan laskimeen)</a>
@@ -87,10 +87,20 @@ function StraightFactsView() {
         Kaikki toimii kuin rasvattu!
       </span>
       <span className="text-center text-sm w-2/3 mx-auto">
-        Kokeile vaikka kopioimalla LaTeX haluamaasi matikkaeditoriin ja
-        lopputulos haluamaasi laskentaohjelmistoon. (suositus: Ti-nspire)
-        Matikkaeditorinkääntäjä toimii haluttaessa vain yhden napin
-        painalluksella!
+        Voit vertailla yllä olevia esimerkkejä kopioimalla LaTeXin{" "}
+        <a className="hover:underline" href="https://math-demo.abitti.fi/">
+          matikkaeditoriin
+        </a>{" "}
+        ja lopputuloksen laskentaohjelmistoon (suositus:{" "}
+        <a
+          className="hover:underline"
+          href="https://education.ti.com/fi/tuotteet/computer-software/ti-nspire-cx-cas-student-sw"
+        >
+          Ti-nspire
+        </a>
+        ). Tämä on vain yksi esimerkki käännöksestä. Mek osaa paljon muutakin!
+        Matikkaeditorinkääntäjän työpöytäversio toimii haluttaessa vain yhden
+        napin painalluksella!
       </span>
     </div>
   );
