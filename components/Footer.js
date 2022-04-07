@@ -12,11 +12,8 @@ function Footer() {
           <FooterItem url="/treasureHunt" value="Aarrejahti" />
           <FooterItem url="/404" value="404" />
           <FooterItem url="/message" value="Viesti" />
-          <FooterItem
-            url="/https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/releases"
-            value="MEK"
-          />
-          <FooterItem url="/https://github.com/eeme1i/fish" value="Github" />
+          <FooterItem url="/mek" value="MEK" />
+          <FooterItem url="https://github.com/eeme1i/fish" value="Github" />
         </div>
       </div>
 
