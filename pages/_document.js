@@ -1,22 +1,19 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
-    static async getInitialProps(ctx) {
-        const initialProps = await Document.getInitialProps(ctx)
-        return { ...initialProps }
-    }
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
+  }
 
-    render() {
-        return (
-            <Html>
-                <Head>
-                    <script
-                        async
-                        src={process.env.ANALYTICS_GTAG_LINK}
-                    />
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
+  render() {
+    return (
+      <Html>
+        <Head>
+          <script async src={process.env.ANALYTICS_GTAG_LINK} />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
                                 window.dataLayer = window.dataLayer || [];
                                 function gtag(){dataLayer.push(arguments);}
                                 gtag('js', new Date());
@@ -24,16 +21,20 @@ class MyDocument extends Document {
                                 page_path: window.location.pathname,
                                 });
                             `,
-                        }}
-                    />
-                </Head>
-                <body>
-                    <Main />
-                    <NextScript />
-                </body>
-            </Html>
-        )
-    }
+            }}
+          />
+          <link
+            href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css"
+            rel="stylesheet"
+          />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
 }
 
-export default MyDocument
+export default MyDocument;

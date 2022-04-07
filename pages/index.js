@@ -3,7 +3,6 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
-
 // commit & push test to dev branch.
 export default function Home() {
   return (
@@ -22,7 +21,7 @@ export default function Home() {
               className="pb-28"
               src="https://fs.pori.fi/adfs/portal/logo/logo.png?id=CB39F2622BCF19EECF330BAF9997244FD33E86E387795B1DE0994342DC3A8A72"
             />
-            <div bg>
+            <div>
               <p className="pb-10">Kirjaudu sisään</p>
               <div className="pb-10">
                 <input

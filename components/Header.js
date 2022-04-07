@@ -19,13 +19,9 @@ function Header() {
           >
             Github
           </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/releases"
-            className="px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3"
-          >
-            MEK
+
+          <a className="px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3">
+            <Link href="/mek">MEK</Link>
           </a>
         </div>
       </div>

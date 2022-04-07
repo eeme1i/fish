@@ -29,7 +29,7 @@ export default function Home() {
             </h1>
             <div className="text-xl font-bold text-nord4 space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
               <LargeButton url="/login" value="Kirjautumissivu" />
-              <LargeButton url="/trasureHunt" value="Aarrejahti" />
+              <LargeButton url="/treasureHunt" value="Aarrejahti" />
             </div>
           </div>
         </div>
