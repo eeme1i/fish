@@ -42,6 +42,15 @@ export default function MekLinks() {
         link="https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/issues"
         text="Ilmoita bugeista"
       />
+      <div className="mx-auto flex flex-col">
+        <LinkElement
+          link="https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/blob/main/README.md"
+          text="Kehittäjän yhteystiedot"
+        />
+        <span className="text-xs text-center">
+          (katso avautuvan tiedoston alaosa)
+        </span>
+      </div>
     </div>
   );
 }

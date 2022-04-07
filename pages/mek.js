@@ -39,12 +39,22 @@ export default function Home() {
           <Row text="Matikkaeditorinkääntäjä on ohjelmisto, joka kääntää matemaattisen LaTeX-tekstin laskentaohjelmistolle sopivaan muotoon." />
           <Row text="Se on tarkoitettu lukiolaisten käyttöön ja sopii erityisen hyvin pitkään matematiikkaan ja fysiikkaan, joissa käytetään paljon pitkiä kaavoja." />
         </div>
+
         <LatexExample />
 
-        <div className="flex flex-col w-2/3 mx-auto gap-2 pb-5">
+        <div className="w-1/2 mx-auto pt-5 pb-8">
+          <Breaker />
+        </div>
+
+        <div className="flex flex-col w-2/3 mx-auto gap-2 pb-8">
           <a className="mx-auto text-2xl">Miksi?</a>
-          <Row text="Pitkiä laskentakaavoja on uuvuttava kirjoittaa matikkaeditorista laskentaohjelmistoon. Nyt se hoituu automaattisesti!" />
+          <Row text="Pitkiä laskentakaavoja on uuvuttava kirjoittaa matikkaeditorista laskentaohjelmistoon." />
+          <Row text="Nyt se hoituu automaattisesti!" />
           <Row text="Oppitunneilla tulee vähemmän näpyttelyvirheitä, kun kaavoja ei tarvitse siirtää käsin." />
+        </div>
+
+        <div className="w-1/2 mx-auto pb-5">
+          <Breaker />
         </div>
 
         <div className="flex flex-col w-2/3 mx-auto gap-2 pb-5">
@@ -55,7 +65,15 @@ export default function Home() {
           <Row text="Porilaista alkuperää" />
         </div>
       </div>
+
+      <div className="w-1/2 mx-auto py-4">
+        <Breaker />
+      </div>
+
       <MekLinks />
+      <div className="w-1/2 mx-auto pt-4 pb-8">
+        <Breaker />
+      </div>
       <Footer />
     </div>
   );
