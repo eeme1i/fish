@@ -48,7 +48,7 @@ export default function Home() {
 
         <div className="flex flex-col w-2/3 mx-auto gap-2 pb-8">
           <a className="mx-auto text-2xl">Miksi?</a>
-          <Row text="Pitkiä laskentakaavoja on uuvuttava kirjoittaa matikkaeditorista laskentaohjelmistoon." />
+          <Row text="Pitkiä laskentakaavoja on uuvuttavaa kirjoittaa matikkaeditorista laskentaohjelmistoon." />
           <Row text="Nyt se hoituu automaattisesti!" />
           <Row text="Oppitunneilla tulee vähemmän näpyttelyvirheitä, kun kaavoja ei tarvitse siirtää käsin." />
         </div>
@@ -60,7 +60,7 @@ export default function Home() {
         <div className="flex flex-col w-2/3 mx-auto gap-2 pb-5">
           <a className="mx-auto text-2xl">Yleistä</a>
           <Row text="Toimii Windows 7/8.1/10/11 käyttöjärjestelmillä" />
-          <Row text="Suunniteltu erityisesti Ti-nspirelle ja Ytl:n matikkaeditorille" />
+          <Row text="Suunniteltu erityisesti Ti-Nspirelle ja Ytl:n matikkaeditorille" />
           <Row text="Täysin ilmainen!" />
           <Row text="Porilaista alkuperää" />
         </div>
