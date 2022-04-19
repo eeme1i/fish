@@ -20,9 +20,6 @@ export default function Home() {
       <Header />
       {/* add "suoraan lataamaan" btn on top and version info */}
       <div className="text-nord4 flex flex-col">
-        <a className="text-nord3 p-2 text-xs text-center">
-          Tämä sivu on vielä toistaiseksi työn alla
-        </a>
         <div className="h-28 py-5 text-5xl">
           <div className="absolute w-full flex">
             <a className="mx-auto underline visible md:invisible">MEK</a>
