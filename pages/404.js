@@ -6,8 +6,8 @@ export default function Custom404() {
     <div className="w-screen h-screen bg-white">
       <Head>
         <title>404 ei löydy!!!! </title>
-        <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Kun sivua ei löydy" />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <div className="flex w-screen justify-center h-screen items-center">
         <Link href="/home">

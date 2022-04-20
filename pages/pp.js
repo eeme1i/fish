@@ -9,15 +9,17 @@ export default function Home() {
       <Head>
         <title>Porin Lukio - Privacy Policy</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.png" />
       </Head>
 
       <div className="p-8 text-black content-center font-mono xl:w-2/4 text-xl">
-        
-        Tämä sivusto ei ketää tai tallenna dataa, jota voitaisiin liittää yksittäiseen käyttäjään.
+        Tämä sivusto ei ketää tai tallenna dataa, jota voitaisiin liittää
+        yksittäiseen käyttäjään.
         <br />
-        Näemme ainoastaan sivun katsojakerrat, käyttäjämäärät, keskimääräisen vierailuajan sekä summittaisen sijainnin (noi kaupungin tarkkuudella).
-        Näitä tietoja ei voi liittää yksittäiseen käyttäjään, emmekä voi tietää kuka olet tai mitä tietoja olet sivustolle syöttänyt tai katsellut.
+        Näemme ainoastaan sivun katsojakerrat, käyttäjämäärät, keskimääräisen
+        vierailuajan sekä summittaisen sijainnin (noi kaupungin tarkkuudella).
+        Näitä tietoja ei voi liittää yksittäiseen käyttäjään, emmekä voi tietää
+        kuka olet tai mitä tietoja olet sivustolle syöttänyt tai katsellut.
         Sivuston kävijädata saadaan käyttämällä Googlen Analytics - palvelua.
         <br />
         <br />

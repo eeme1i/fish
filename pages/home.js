@@ -17,7 +17,7 @@ export default function Home() {
           name="description"
           content="Porin Lukion (epä)viralliset kotisivut"
         />
-        <link rel="icon" href="" />
+        <link rel="icon" href="/icon.png" />
       </Head>
 
       <div className="font-sans max-w-[48rem] mx-auto space-y-8">

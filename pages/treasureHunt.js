@@ -25,7 +25,7 @@ export default function Home() {
       <Head>
         <title>porinlukio.fi</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.png" />
       </Head>
 
       <Header />

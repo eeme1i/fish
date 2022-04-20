@@ -14,8 +14,12 @@ export default function Home() {
     <div className="bg-nord0 min-h-screen text-md">
       <Head>
         <title>Porin Lukio - Mek</title>
-        <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Matikkaeditorinkääntäjä on ohjelmisto, joka kääntää matemaattisen LaTeX-tekstin laskentaohjelmistolle sopivaan muotoon. 
+                  Korvaamaton apu lukiolaiselle fysiikkaan ja matematiikkaan!"
+        />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <Header />
       {/* add "suoraan lataamaan" btn on top and version info */}

@@ -9,12 +9,11 @@ export default function Home() {
       <Head>
         <title>Kirjaudu sisään</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <div className="font-sans text-sm">
         <div className="flex">
-          <div className=" w-full h-screen flex bg-cover bg-[url('/illustration.jpg')]">
-          </div>
+          <div className=" w-full h-screen flex bg-cover bg-[url('/illustration.jpg')]"></div>
           <div className="p-16 min-w-[500px]">
             <img
               className="pb-28"

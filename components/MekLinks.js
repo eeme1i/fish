@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 function LinkElement({ link, text }) {
   return (
     <a

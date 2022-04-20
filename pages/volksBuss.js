@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>Porin Lukio - kansanbussi</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/janne.ico" />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <Header />
 

@@ -9,8 +9,8 @@ export default function Home() {
     <div className="">
       <Head>
         <title>Kirjaudu sisään</title>
-        <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Kirjaudu palveluun" />
+        <link rel="icon" href="/icon.png" />
       </Head>
 
       <div className="font-sans text-sm">
