@@ -74,8 +74,8 @@ export default function Home() {
       <MekLinks />
       <div className="w-1/2 mx-auto pt-4 pb-8">
         <Breaker />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
