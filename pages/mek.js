@@ -14,15 +14,16 @@ export default function Home() {
     <div className="bg-nord0 min-h-screen text-md">
       <Head>
         <title>Porin Lukio - Mek</title>
-        <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Matikkaeditorinkääntäjä on ohjelmisto, joka kääntää matemaattisen LaTeX-tekstin laskentaohjelmistolle sopivaan muotoon. 
+                  Korvaamaton apu lukiolaiselle fysiikkaan ja matematiikkaan!"
+        />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <Header />
       {/* add "suoraan lataamaan" btn on top and version info */}
       <div className="text-nord4 flex flex-col">
-        <a className="text-nord3 p-2 text-xs text-center">
-          Tämä sivu on vielä toistaiseksi työn alla
-        </a>
         <div className="h-28 py-5 text-5xl">
           <div className="absolute w-full flex">
             <a className="mx-auto underline visible md:invisible">MEK</a>
@@ -48,7 +49,7 @@ export default function Home() {
 
         <div className="flex flex-col w-2/3 mx-auto gap-2 pb-8">
           <a className="mx-auto text-2xl">Miksi?</a>
-          <Row text="Pitkiä laskentakaavoja on uuvuttava kirjoittaa matikkaeditorista laskentaohjelmistoon." />
+          <Row text="Pitkiä laskentakaavoja on uuvuttavaa kirjoittaa matikkaeditorista laskentaohjelmistoon." />
           <Row text="Nyt se hoituu automaattisesti!" />
           <Row text="Oppitunneilla tulee vähemmän näpyttelyvirheitä, kun kaavoja ei tarvitse siirtää käsin." />
         </div>
@@ -60,7 +61,7 @@ export default function Home() {
         <div className="flex flex-col w-2/3 mx-auto gap-2 pb-5">
           <a className="mx-auto text-2xl">Yleistä</a>
           <Row text="Toimii Windows 7/8.1/10/11 käyttöjärjestelmillä" />
-          <Row text="Suunniteltu erityisesti Ti-nspirelle ja Ytl:n matikkaeditorille" />
+          <Row text="Suunniteltu erityisesti Ti-Nspirelle ja Ytl:n matikkaeditorille" />
           <Row text="Täysin ilmainen!" />
           <Row text="Porilaista alkuperää" />
         </div>
@@ -73,8 +74,8 @@ export default function Home() {
       <MekLinks />
       <div className="w-1/2 mx-auto pt-4 pb-8">
         <Breaker />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

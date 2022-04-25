@@ -14,7 +14,7 @@ export default function LatexExample() {
 
 function TextBlock({ elem }) {
   return (
-    <div className="flex ">
+    <div className="flex drop-shadow-2xl">
       <div className="mx-auto p-3 bg-slate-400 rounded-xl text-black w-72">
         {elem}
       </div>

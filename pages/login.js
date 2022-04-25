@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
 export default function Home() {
@@ -8,13 +6,15 @@ export default function Home() {
     <div className="">
       <Head>
         <title>Kirjaudu sisään</title>
-        <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Kirjaudu sisään palveluun porinlukio.fi"
+        />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <div className="font-sans text-sm">
         <div className="flex">
-          <div className=" w-full h-screen flex bg-cover bg-[url('/illustration.jpg')]">
-          </div>
+          <div className=" w-full h-screen flex bg-cover bg-[url('/illustration.jpg')]"></div>
           <div className="p-16 min-w-[500px]">
             <img
               className="pb-28"

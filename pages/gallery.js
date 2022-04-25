@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Head from "next/head";
 import Footer from "../components/Footer.js";
 import Header from "../components/Header.js";
@@ -6,6 +5,11 @@ import Header from "../components/Header.js";
 export default function Home() {
   return (
     <div className="bg-nord0 min-h-screen w-full text-nord4">
+      <Head>
+        <title>Porinlukio - Galleria</title>
+        <meta name="description" content="Otteita oppitunneilta" />
+        <link rel="icon" href="/icon.png" />
+      </Head>
       <Header />
       <p className="w-min mx-auto text-5xl underline p-10">Galleria</p>
       <div className=" w-3/4 md:max-w-4xl mx-auto flex flex-col  space-y-4 py-4 min-h-screen">
@@ -19,9 +23,7 @@ export default function Home() {
           <br />
           -joku äidinkielenopettaja, aina
         </p>
-        <p>
-          (eräät) nimet sensuroitu yksityisyyden suojaamiseksi
-        </p>
+        <p>(eräät) nimet sensuroitu yksityisyyden suojaamiseksi</p>
       </div>
       <Footer />
     </div>
