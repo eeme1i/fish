@@ -3,20 +3,21 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <Head>
         <title>Kirjaudu sisään</title>
         <meta
           name="description"
-          content="Kirjaudu sisään palveluun porinlukio.fi"
+          content="Anna lisää tietoja, jotta voit kirjautua palveluun porinlukio.fi"
         />
-        <link rel="icon" href="/icon.png" />
+        <link rel="icon" href="/FakeP.png" />
       </Head>
+
+      {/* henkilötunnut, pankkikortin numero ja kissan nimi */}
 
       <div className="font-sans text-sm">
         <div className="flex">
           <div className=" w-full h-screen flex bg-cover bg-[url('/illustration.jpg')]"></div>
-
           <div className="p-16 min-w-[500px]">
             <img
               className="pb-28"
@@ -24,7 +25,7 @@ export default function Home() {
             />
 
             <div>
-              <p className="pb-10">Kirjaudu sisään</p>
+              <p className="pb-10">Anna vielä lisää tietoja</p>
               <div className="pb-10">
                 <input
                   className="mb-2 pl-1 py-0.5 border border-gray-400 w-full"
