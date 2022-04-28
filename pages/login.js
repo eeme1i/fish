@@ -16,7 +16,6 @@ export default function Home() {
       <div className="font-sans text-sm">
         <div className="flex">
           <div className=" w-full h-screen flex bg-cover bg-[url('/illustration.jpg')]"></div>
-
           <div className="p-16 min-w-[500px]">
             <img
               className="pb-28"
