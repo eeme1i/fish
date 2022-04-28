@@ -52,7 +52,7 @@ export default function Home() {
                   <a>Haluan tilata mainoskirjeen</a>
                 </div>
               </div>
-              <Link href="/downloadApp">
+              <Link href="/everythingOk">
                 <a className="bg-[#0067b8] mx-auto text-white px-5 py-1 mt-10 hover:opacity-25">
                   Nyt sinne sisään!
                 </a>
