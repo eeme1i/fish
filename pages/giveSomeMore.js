@@ -32,7 +32,7 @@ export default function Home() {
       </Head>
       <div className="font-sans text-sm">
         <div className="flex">
-          <div className="h-screen flex bg-cover bg-[url('/illustration.jpg')] w-0 sm:w-3/5"></div>
+          <div className="h-screen flex bg-cover bg-[url('/illustration.jpg')] w-0 sm:w-2/3 "></div>
           <div className="mx-auto mt-5">
             <div className=" flex flex-col h-full ">
               <img className="my-3" src={poriLogo} />
