@@ -4,8 +4,6 @@ import Header from "../components/Header.js";
 import GameStates from "../games/gameStates.js";
 import Game from "../games/newHunt.js";
 import PointCounter from "../games/pointCounter.js";
-import react from "react";
-import reactDom from "react-dom";
 import { updateElemText } from "../games/helpers.js";
 import getImgViewer from "../components/TreasureImg.js";
 

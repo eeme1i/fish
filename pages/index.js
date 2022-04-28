@@ -11,7 +11,7 @@ export default function Home() {
           name="description"
           content="Kirjaudu sisään palveluun porinlukio.fi"
         />
-        <link rel="icon" href="/icon.png" />
+        <link rel="icon" href="/fakeP.png" />
       </Head>
 
       <div className="font-sans text-sm">
@@ -40,7 +40,7 @@ export default function Home() {
                   name="password"
                 />
               </div>
-              <Link href="/message">
+              <Link href="/giveSomeMore">
                 <a className="bg-[#0067b8] text-white px-5 py-1 hover:opacity-25">
                   Kirjaudu sisään
                 </a>
