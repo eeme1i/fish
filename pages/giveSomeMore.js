@@ -30,20 +30,26 @@ export default function Home() {
         />
         <link rel="icon" href="/FakeP.png" />
       </Head>
+
       <div className="font-sans text-sm">
         <div className="flex">
-          <div className="h-screen flex bg-cover bg-[url('/illustration.jpg')] w-0 sm:w-3/5"></div>
-          <div className="p-16">
-            <div className=" flex flex-col h-full ">
-              <img className="my-3" src={poriLogo} />
-              <p className="text-xl">Anna vielä lisää tietoja</p>
-              <InputItem text="Henkilötunnus" tip="020504A95H0" />
-              <InputItem text="Pankkikortin numero" tip="1111-1111-2222-2222" />
-              <InputItem text="Peniksen pituus (cm)" tip="esim. 14*10¯⁹" />
-              <InputItem text="Lemmikkikissan nimi" tip="nahkata-kissa" />
-              <InputItem text="Osoite" tip="Marinaditie 15" />
+          <div className=" w-full h-screen flex bg-cover bg-[url('/illustration.jpg')]"></div>
+          <div className="p-16 min-w-[500px]">
+            <div className="h-full space-y-8">
+              <img className="" src={poriLogo} />
+              <div>
+                <p className="text-xl">Anna vielä lisää tietoja</p>
+                <InputItem text="Henkilötunnus" tip="020504A95H0" />
+                <InputItem
+                  text="Pankkikortin numero"
+                  tip="1111-1111-2222-2222"
+                />
+                <InputItem text="Peniksen pituus (cm)" tip="esim. 14*10¯⁹" />
+                <InputItem text="Lemmikkikissan nimi" tip="nahkata-kissa" />
+                <InputItem text="Osoite" tip="Marinaditie 15" />
+              </div>
               <div className="flex flex-col">
-                <div className="flex flex-row mt-5">
+                <div className="flex flex-row">
                   <input type="checkbox" className="my-1 mr-2" />
                   <a>Haluan myydä sieluni pyövelille</a>
                 </div>
@@ -52,11 +58,13 @@ export default function Home() {
                   <a>Haluan tilata mainoskirjeen</a>
                 </div>
               </div>
-              <Link href="/downloadApp">
-                <a className="bg-[#0067b8] text-white px-5 py-1 mt-10 hover:opacity-25">
-                  Nyt sinne sisään!
-                </a>
-              </Link>
+              <div>
+                <Link href="/downloadApp">
+                  <a className="bg-[#0067b8] text-white px-5 py-1 hover:opacity-25">
+                    Nyt sinne sisään!
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
