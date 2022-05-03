@@ -7,7 +7,7 @@ const poriLogo =
 function InputItem({ text, tip }) {
   return (
     <div className="flex flex-col">
-      <a className="pt-2 pb-1">{text}</a>
+      <a className="pt-3 pb-2">{text}</a>
       <input
         className="mb-2 pl-1 py-0.5 border border-gray-400"
         placeholder={tip}
@@ -21,7 +21,7 @@ function InputItem({ text, tip }) {
 
 function CheckBoxItem({ text }) {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row my-1">
       <input type="checkbox" className="my-1 mr-2" />
       <a>{text}</a>
     </div>
@@ -47,7 +47,7 @@ function InputFields() {
 
 function LogicBoxes() {
   return (
-    <div className="space-y-5">
+    <div className="space-y-8">
       <img className="" src={poriLogo} />
       <InputFields />
       <div className="flex flex-col">
@@ -62,7 +62,7 @@ function LogicBoxes() {
           </Link>
         </div>
       </div>
-      <div className="absolute">
+      <div className="pt-8">
         <Link href="/home">
           <p className="text-xs text-gray-500">© 2022 porinlukio.fi</p>
         </Link>
@@ -85,7 +85,7 @@ export default function Home() {
 
       <div className="font-sans text-sm flex">
         <div className="sm:w-full min-h-screen bg-cover bg-[url('/illustration.jpg')]"></div>
-        <div className="mx-auto p-16 sm:min-w-[500px] ">
+        <div className="mx-auto pt-16 px-16 sm:min-w-[500px] ">
           <LogicBoxes />
         </div>
       </div>
