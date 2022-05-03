@@ -34,8 +34,8 @@ export default function Home() {
       <div className="font-sans text-sm">
         <div className="flex">
           <div className=" w-full h-screen flex bg-cover bg-[url('/illustration.jpg')]"></div>
-          <div className="p-16 min-w-[500px]">
-            <div className="h-full space-y-8">
+          <div className="px-16 pt-16 min-w-[500px]">
+            <div className="h-full space-y-6">
               <img className="" src={poriLogo} />
               <div>
                 <p className="text-xl">Anna vielä lisää tietoja</p>
