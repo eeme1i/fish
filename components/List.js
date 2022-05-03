@@ -43,6 +43,21 @@ function List() {
             linkki
           </a>
         </div>
+        <div className="sm:flex sm:flex-row">
+          <p>Matikkaeditorinkääntäjä</p>
+          <a
+            className="ml-auto hover:underline"
+            href="https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja"
+          >
+            linkki
+          </a>
+        </div>
+        <div className="sm:flex sm:flex-row">
+          <p>Galleria</p>
+          <a className="ml-auto hover:underline" href="/gallery">
+            linkki
+          </a>
+        </div>
       </div>
     </div>
   );
