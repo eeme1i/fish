@@ -54,9 +54,9 @@ function List() {
         </div>
         <div className="sm:flex sm:flex-row">
           <p>Galleria</p>
-          <a className="ml-auto hover:underline" href="/gallery">
-            linkki
-          </a>
+          <Link href="/gallery">
+            <a className="ml-auto hover:underline">linkki</a>
+          </Link>
         </div>
       </div>
     </div>
