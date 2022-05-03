@@ -23,6 +23,15 @@ export default function Home() {
           <br />
           -joku äidinkielenopettaja, aina
         </p>
+        <p>
+          <span className="text-lg">Tuntimerkintä, Oppitunnin häirintä</span>
+          <br />
+          Tiedoksi kotiväelle, [opettaja] kälätti tänään matematiikan tunnelli
+          niin paljon, että kukaan ei pystynyt opiskelemaan. Toivomme teidän
+          keskustelevan asiasta kotona [opettajan] kanssa, ettei sama toistuisi.
+          <br />
+          -Terveisin, vittuntunut lukiolainen
+        </p>
         <p>(eräät) nimet sensuroitu yksityisyyden suojaamiseksi</p>
       </div>
       <Footer />
