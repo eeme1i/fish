@@ -7,7 +7,7 @@ const poriLogo =
 function InputItem({ text, tip }) {
   return (
     <div className="flex flex-col">
-      <a className="pt-3 pb-2">{text}</a>
+      <a className="pt-2 pb-1">{text}</a>
       <input
         className="mb-2 pl-1 py-0.5 border border-gray-400"
         placeholder={tip}
@@ -15,6 +15,58 @@ function InputItem({ text, tip }) {
         id="email"
         name="email"
       />
+    </div>
+  );
+}
+
+function CheckBoxItem({ text }) {
+  return (
+    <div className="flex flex-row">
+      <input type="checkbox" className="my-1 mr-2" />
+      <a>{text}</a>
+    </div>
+  );
+}
+
+function InputFields() {
+  return (
+    <div>
+      <p className="text-xl">Anna vielä lisää tietoja</p>
+      <InputItem text="Henkilötunnus" tip="020504A95H0" />
+      <InputItem text="Pankkikortin numero" tip="1111-1111-2222-2222" />
+      <InputItem text="Peniksen pituus (cm)" tip="esim. 14*10¯⁹" />
+      <InputItem text="Lemmikkikissan nimi" tip="nahkata-kissa" />
+      <InputItem text="Osoite" tip="Marinaditie 15" />
+      <div className="flex flex-col space-y-3 mt-3">
+        <CheckBoxItem text="Haluan myydä sieluni pyövelille" />
+        <CheckBoxItem text="Haluan tilata mainoskirjeen" />
+      </div>
+    </div>
+  );
+}
+
+function LogicBoxes() {
+  return (
+    <div className="space-y-5">
+      <img className="" src={poriLogo} />
+      <InputFields />
+      <div className="flex flex-col">
+        <span className="pb-5 text-xs">
+          Vastasithan kaikkeen totuudenmukaisesti?
+        </span>
+        <div>
+          <Link href="/downloadApp">
+            <a className="bg-[#0067b8] text-white px-5 py-1 hover:opacity-25">
+              Nyt sinne sisään!
+            </a>
+          </Link>
+        </div>
+      </div>
+      <div className="absolute">
+        <Link href="/home">
+          <p className="text-xs text-gray-500">© 2022 porinlukio.fi</p>
+        </Link>
+      </div>
     </div>
   );
 }
@@ -31,48 +83,11 @@ export default function Home() {
         <link rel="icon" href="/FakeP.png" />
       </Head>
 
-      <div className="font-sans text-sm">
-        <div className="flex">
-          <div className=" w-full min-h-screen flex bg-cover bg-[url('/illustration.jpg')]"></div>
-          <div className="px-16 pt-16 min-w-[500px]">
-            <div className="h-full space-y-6">
-              <img className="" src={poriLogo} />
-              <div>
-                <p className="text-xl">Anna vielä lisää tietoja</p>
-                <InputItem text="Henkilötunnus" tip="020504A95H0" />
-                <InputItem
-                  text="Pankkikortin numero"
-                  tip="1111-1111-2222-2222"
-                />
-                <InputItem text="Peniksen pituus (cm)" tip="esim. 14*10¯⁹" />
-                <InputItem text="Lemmikkikissan nimi" tip="nahkata-kissa" />
-                <InputItem text="Osoite" tip="Marinaditie 15" />
-              </div>
-              <div className="flex flex-col">
-                <div className="flex flex-row">
-                  <input type="checkbox" className="my-1 mr-2" />
-                  <a>Haluan myydä sieluni pyövelille</a>
-                </div>
-                <div className="flex flex-row mt-5">
-                  <input type="checkbox" className="my-1 mr-2" />
-                  <a>Haluan tilata mainoskirjeen</a>
-                </div>
-              </div>
-              <div>
-                <Link href="/downloadApp">
-                  <a className="bg-[#0067b8] text-white px-5 py-1 hover:opacity-25">
-                    Nyt sinne sisään!
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
+      <div className="font-sans text-sm flex">
+        <div className="sm:w-full min-h-screen bg-cover bg-[url('/illustration.jpg')]"></div>
+        <div className="mx-auto p-16 sm:min-w-[500px] ">
+          <LogicBoxes />
         </div>
-      </div>
-      <div className="absolute right-5 bottom-5 hover:cursor-default">
-        <Link href="/home" className="">
-          <p className="text-xs text-gray-500">© 2022 porinlukio.fi</p>
-        </Link>
       </div>
     </div>
   );
