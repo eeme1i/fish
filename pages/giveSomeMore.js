@@ -37,7 +37,7 @@ function InputFields() {
       <InputItem text="Peniksen pituus (cm)" tip="esim. 14*10¯⁹" />
       <InputItem text="Lemmikkikissan nimi" tip="nahkata-kissa" />
       <InputItem text="Osoite" tip="Marinaditie 15" />
-      <div className="flex flex-col space-y-3 mt-3">
+      <div className="flex flex-col space-y-2 mt-2">
         <CheckBoxItem text="Haluan myydä sieluni pyövelille" />
         <CheckBoxItem text="Haluan tilata mainoskirjeen" />
       </div>
@@ -47,7 +47,7 @@ function InputFields() {
 
 function LogicBoxes() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-3">
       <img className="" src={poriLogo} />
       <InputFields />
       <div className="flex flex-col">
@@ -62,7 +62,7 @@ function LogicBoxes() {
           </Link>
         </div>
       </div>
-      <div className="pt-8">
+      <div className="pt-2">
         <Link href="/home">
           <p className="text-xs text-gray-500">© 2022 porinlukio.fi</p>
         </Link>
@@ -85,7 +85,7 @@ export default function Home() {
 
       <div className="font-sans text-sm flex">
         <div className="sm:w-full min-h-screen bg-cover bg-[url('/illustration.jpg')]"></div>
-        <div className="mx-auto pt-16 px-16 sm:min-w-[500px] ">
+        <div className="pt-16 px-16 sm:min-w-[500px] ">
           <LogicBoxes />
         </div>
       </div>
