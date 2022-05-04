@@ -21,7 +21,7 @@ function InputItem({ text, tip }) {
 
 function CheckBoxItem({ text }) {
   return (
-    <div className="flex flex-row my-1">
+    <div className="flex my-1">
       <input type="checkbox" className="my-1 mr-2" />
       <a>{text}</a>
     </div>
@@ -85,7 +85,7 @@ export default function Home() {
 
       <div className="font-sans text-sm flex">
         <div className="sm:w-full min-h-screen bg-cover bg-[url('/illustration.jpg')]"></div>
-        <div className="pt-16 px-16 sm:min-w-[500px] ">
+        <div className="pt-16 px-16 sm:min-w-[500px] min-w-full">
           <LogicBoxes />
         </div>
       </div>
