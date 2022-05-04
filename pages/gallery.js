@@ -16,12 +16,12 @@ export default function Home() {
         <p className="">
           Nyt Tuomas se peli pois, tai pääset seuraavaksi käytävään pelaamaan
           <br />
-          -nimeltä mainitsematon opo 16.2.2022
+          -Nimeltä mainitsematon opo 16.2.2022
         </p>
         <p>
           Kirjoittakaapa tällanen 10 000 merkin essee huomiseksi
           <br />
-          -joku äidinkielenopettaja, aina
+          -Joku äidinkielenopettaja, aina
         </p>
         <p>
           <span className="text-lg">Tuntimerkintä, Oppitunnin häirintä</span>
@@ -31,6 +31,11 @@ export default function Home() {
           keskustelevan asiasta kotona [opettajan] kanssa, ettei sama toistuisi.
           <br />
           -Terveisin, vittuntunut lukiolainen
+        </p>
+        <p>
+          Juuso! Riisu!
+          <br />
+          -Ruotsintunnilla
         </p>
         <p>(eräät) nimet sensuroitu yksityisyyden suojaamiseksi</p>
       </div>
