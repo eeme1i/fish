@@ -11,7 +11,7 @@ export default function Home() {
           name="description"
           content="Anna lisää tietoja, jotta voit kirjautua palveluun porinlukio.fi"
         />
-        <link rel="icon" href="/FakeP.png" />
+        <link rel="icon" href="/fakeP.png" />
       </Head>
       <div className="w-full min-h-screen flex flex-col">
         <div>
