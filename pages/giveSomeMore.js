@@ -61,11 +61,11 @@ function LogicBoxes() {
             </a>
           </Link>
         </div>
-      </div>
-      <div className="pt-2">
-        <Link href="/home">
-          <p className="text-xs text-gray-500">© 2022 porinlukio.fi</p>
-        </Link>
+        <div className="absolute bottom-5">
+          <Link href="/home">
+            <p className="text-xs text-gray-500">© 2022 porinlukio.fi</p>
+          </Link>
+        </div>
       </div>
     </div>
   );
