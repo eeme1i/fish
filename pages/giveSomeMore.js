@@ -55,7 +55,7 @@ function LogicBoxes() {
           Vastasithan kaikkeen totuudenmukaisesti?
         </span>
         <div>
-          <Link href="/downloadApp">
+          <Link href="/everythingOk">
             <a className="bg-[#0067b8] text-white px-5 py-1 hover:opacity-25">
               Nyt sinne sisään!
             </a>
@@ -80,7 +80,7 @@ export default function Home() {
           name="description"
           content="Anna lisää tietoja, jotta voit kirjautua palveluun porinlukio.fi"
         />
-        <link rel="icon" href="/FakeP.png" />
+        <link rel="icon" href="/fakeP.png" />
       </Head>
 
       <div className="font-sans text-sm flex">
