@@ -37,6 +37,12 @@ export default function Home() {
           <br />
           -Ruotsintunnilla
         </p>
+        <p>
+          Nyt mää kyllä tarttisin jonkun lampun teijän pään päälle, että mää
+          näkisin, että syttyykö se, vai sammuuko lopullisesti.
+          <br />
+          -Matikka 12
+        </p>
         <p>(eräät) nimet sensuroitu yksityisyyden suojaamiseksi</p>
       </div>
       <Footer />
