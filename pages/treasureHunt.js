@@ -32,8 +32,7 @@ export default function Home() {
       </p>
       <div
         id="gameBoard"
-        className="text-nord4 w-2/3 grid items-center grid-cols-1 m-auto mb-[8%]
-                        md:align-middle md:w-[100%] max-w-6xl  md:grid-cols-3 "
+        className="text-nord4 w-2/3 grid items-center grid-cols-1 m-auto mb-[8%] md:align-middle md:w-[100%] max-w-6xl  md:grid-cols-3 "
       >
         <div className=" col-span-2  py-[3%] flex flex-col p-[5%]  ">
           <div className="grid grid-cols-3 gap-2 ">
