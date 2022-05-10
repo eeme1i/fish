@@ -103,12 +103,10 @@ export default function Kurssitarjotin() {
       <div className="font-sans space-y-8">
         <Header />
         <div className="text-nord4">
-          <h1 className="text-4xl font-bold flex justify-center">
+          <h1 className="text-4xl font-bold text-center">
             Porin lukion kurssitarjotin
           </h1>
-          <h2 className="text-2xl mt-3 font-bold flex justify-center">
-            2022-2023
-          </h2>
+          <h2 className="text-2xl mt-3 font-bold text-center">2022-2023</h2>
           <div className="mt-3 w-5/6 mx-auto">
             <p className="text-center ">
               Tämä version on kurssitarjottimen esiversio ja se on jaettu jo
@@ -118,6 +116,7 @@ export default function Kurssitarjotin() {
             <p className=" text-center ">
               (XX tarkoittaa, ettei kurssin numero ole varmasti tiedossa)
             </p>
+            <p className=" text-center text-xs mt-2">päivitetty 10.5.2022</p>
           </div>
           <Leak />
         </div>
