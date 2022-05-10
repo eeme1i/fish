@@ -67,7 +67,7 @@ function List() {
         </div>
 
         <div className="sm:flex sm:flex-row">
-          <p>kurssitarjotin</p>
+          <p>Kurssitarjotin</p>
           <Link href="/kurssitarjotin">
             <a className="ml-auto hover:underline">linkki</a>
           </Link>
