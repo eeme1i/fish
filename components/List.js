@@ -65,6 +65,13 @@ function List() {
             <a className="ml-auto hover:underline">linkki</a>
           </Link>
         </div>
+
+        <div className="sm:flex sm:flex-row">
+          <p>kurssitarjotin</p>
+          <Link href="/kurssitarjotin">
+            <a className="ml-auto hover:underline">linkki</a>
+          </Link>
+        </div>
       </div>
     </div>
   );
