@@ -109,6 +109,16 @@ export default function Kurssitarjotin() {
           <h2 className="text-2xl mt-3 font-bold flex justify-center">
             2022-2023
           </h2>
+          <div className="mt-3 w-5/6 mx-auto">
+            <p className="text-center ">
+              Tämä version on kurssitarjottimen esiversio ja se on jaettu jo
+              koulun opettajille. Tähän versioon saattaa siis tulla vielä
+              muutoksia.
+            </p>
+            <p className=" text-center ">
+              (XX tarkoittaa, ettei kurssin numero ole varmasti tiedossa)
+            </p>
+          </div>
           <Leak />
         </div>
         <div className="px-8 flex justify-center text-nord4">
