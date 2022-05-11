@@ -116,7 +116,9 @@ export default function Kurssitarjotin() {
             <p className=" text-center ">
               (XX tarkoittaa, ettei kurssin numero ole varmasti tiedossa)
             </p>
-            <p className=" text-center text-xs mt-2">päivitetty 10.5.2022</p>
+            <p className=" text-center text-xs mt-2">
+              päivitetty 11.5.2022 klo 13.00
+            </p>
           </div>
           <Leak />
         </div>
