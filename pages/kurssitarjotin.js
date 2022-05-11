@@ -156,7 +156,7 @@ export default function Kurssitarjotin() {
                 <p>4</p>
 
                 <p>13:30-14:45</p>
-                <p>1</p>
+                <p>3</p>
                 <p>6</p>
                 <p>6</p>
                 <p>7</p>
@@ -167,7 +167,7 @@ export default function Kurssitarjotin() {
                 <p>8, 8 ti</p>
                 <p>7</p>
                 <p>8, 8 to</p>
-                <p>8, 8 to</p>
+                <p>8, 8 pe</p>
               </div>
             </div>
           </div>
