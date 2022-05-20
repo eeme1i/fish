@@ -32,7 +32,7 @@ export default function Home() {
             <br />
             <br />
             Ainoa oikea kirjautumissivu on{" "}
-            <span className="underline">pori.fi</span>
+            <span className="underline">fs.pori.fi</span>
             <br />
             <br />
             Tietojen kalastelulta suojautuminen:{" "}
