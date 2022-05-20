@@ -73,6 +73,7 @@ export default function Home() {
               <a className="hover:underline">- porinlukio.fi</a>
             </Link>
             <br />
+            <br />
             <Link href="/home">
               <a className="hover:underline">Siirry kotiin</a>
             </Link>
