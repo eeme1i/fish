@@ -72,6 +72,10 @@ export default function Home() {
             <Link href="/home">
               <a className="hover:underline">- porinlukio.fi</a>
             </Link>
+            <br />
+            <Link href="/home">
+              <a className="hover:underline">Siirry kotiin</a>
+            </Link>
           </p>
         </div>
 
