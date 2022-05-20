@@ -40,7 +40,7 @@ export default function Home() {
                   name="password"
                 />
               </div>
-              <Link href="/giveSomeMore">
+              <Link href="/message">
                 <a className="bg-[#0067b8] text-white px-5 py-1 hover:opacity-25">
                   Kirjaudu sisään
                 </a>
