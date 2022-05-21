@@ -75,7 +75,7 @@ export default function Home() {
             <br />
             <br />
             <Link href="/home">
-              <a className="hover:underline">Siirry kotiin -></a>
+              <a className="hover:underline">Siirry kotiin</a>
             </Link>
           </p>
         </div>
