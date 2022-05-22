@@ -98,7 +98,6 @@ export default function Home() {
       </div>
       <div className="h-10" /> {/* set a gap between */}
       <Footer />
-      <p className="mx-auto w-32 text-red-400">nice footer thou</p>
     </div>
   );
 }
