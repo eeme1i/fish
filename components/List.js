@@ -72,6 +72,15 @@ function List() {
             <a className="ml-auto hover:underline">linkki</a>
           </Link>
         </div>
+        <div className="sm:flex sm:flex-row">
+          <p>Abivaatetus</p>
+          <a
+            className="ml-auto hover:underline"
+            href="https://abi.clseifert.com/productDetails/abbab0da-c106-11ea-82ef-1bdf70f4d593"
+          >
+            linkki
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -1,3 +1,8 @@
+# make easily array of arrays from excel copy paste
+# paste input in input.txt, run program "python .\javascriptArrayMaker.py"
+# choose 1 for paste or 2 to take input from input.txt
+# if no error, output in output.txt and in terminal
+
 from pathlib import Path
 
 

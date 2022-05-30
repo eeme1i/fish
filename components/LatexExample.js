@@ -15,7 +15,7 @@ export default function LatexExample() {
 function TextBlock({ elem }) {
   return (
     <div className="flex drop-shadow-2xl">
-      <div className="mx-auto p-3 bg-slate-400 rounded-xl text-black w-72">
+      <div className="mx-auto p-3 bg-nord3 rounded-xl text-black w-72">
         {elem}
       </div>
     </div>
@@ -99,8 +99,10 @@ function StraightFactsView() {
           Ti-nspire
         </a>
         ). Tämä on vain yksi esimerkki käännöksestä. Mek osaa paljon muutakin!
-        Matikkaeditorinkääntäjän työpöytäversio toimii haluttaessa vain yhden
-        napin painalluksella!
+        Matikkaeditorinkääntäjän työpöytäversio toimii{" "}
+        <a className="font-bold">
+          haluttaessa vain yhden napin painalluksella!
+        </a>
       </span>
     </div>
   );
