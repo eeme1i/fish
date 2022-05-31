@@ -6,8 +6,8 @@ import Breaker from "../components/Breaker";
 import LatexExample from "../components/LatexExample";
 import DownLoadLink from "../components/DownloadLink";
 
-const MekDownloadUrl = "";
-//"https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/archive/refs/tags/v3.1.6.zip";
+const MekDownloadUrl =
+  "https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/archive/refs/tags/v3.1.6.zip";
 
 function Row({ text }) {
   return <a className="text-center">{text}</a>;
