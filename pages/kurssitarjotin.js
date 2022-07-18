@@ -189,9 +189,9 @@ export default function Kurssitarjotin() {
           <div className="mx-auto my-5">
             <p>1. periodi 11.08.2022 - 30.09.2022</p>
             <p>2. periodi 03.10.2022 - 29.11.2022</p>
-            <p>3. periodi 30.11.2022 - 07.02.2022</p>
-            <p>4. periodi 08.02.2022 - 06.04.2022</p>
-            <p>5. periodi 11.04.2022 - 03.06.2022</p>
+            <p>3. periodi 30.11.2022 - 07.02.2023</p>
+            <p>4. periodi 08.02.2023 - 06.04.2023</p>
+            <p>5. periodi 11.04.2023 - 03.06.2023</p>
           </div>
         </div>
         <Breaker />
