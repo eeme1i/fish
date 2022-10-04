@@ -8,7 +8,7 @@ import DownLoadLink from "../components/DownloadLink";
 
 // this link starts download of mek 3.1.6
 const MekDownloadUrl =
-  "https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/archive/refs/tags/v3.1.6.zip";
+  "https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/archive/refs/tags/v3.1.7.zip";
 
 function Row({ text }) {
   return <a className="text-center">{text}</a>;
