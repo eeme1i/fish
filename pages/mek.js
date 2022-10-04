@@ -6,7 +6,7 @@ import Breaker from "../components/Breaker";
 import LatexExample from "../components/LatexExample";
 import DownLoadLink from "../components/DownloadLink";
 
-// this link starts download of mek 3.1.6
+// this link starts download of mek 3.1.7
 const MekDownloadUrl =
   "https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/archive/refs/tags/v3.1.7.zip";
 
@@ -53,7 +53,7 @@ export default function Home() {
         <div className="bg-gray-800 my-8 mx-auto w-2/3 p-0.5 max-w-2xl">
           <div className="bg-nord3 md:flex p-5 space-y-5 md:space-y-0">
             <div className="my-auto mx-5 text-center">
-              <a className="">Lataa Matikkaeditorinkääntäjä v3.1.6 (Windows)</a>
+              <a className="">Lataa Matikkaeditorinkääntäjä v3.1.7 (Windows)</a>
             </div>
             <div className="ml-auto ">
               <DownLoadLink text="Lataa (zip)" url={MekDownloadUrl} />
