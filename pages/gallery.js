@@ -13,6 +13,14 @@ export default function Home() {
       <Header />
       <p className="w-min mx-auto text-5xl underline p-10">Galleria</p>
       <div className=" w-3/4 md:max-w-4xl mx-auto flex flex-col  space-y-4 py-4 min-h-screen">
+        <p className="underline text-3xl">Uudet</p>
+        <p>
+          Eräs äidinkielenopettaja: Kirja on huono käyttöliittymä. Hipelöin
+          usein kirjoja.
+        </p>
+
+        <p className="underline text-3xl">Vanhat</p>
+
         <p className="">
           Nyt Tuomas se peli pois, tai pääset seuraavaksi käytävään pelaamaan
           <br />
