@@ -17,12 +17,12 @@ export default function MekLinks() {
       <a className="text-4xl underline mx-auto pb-4">Linkkejä</a>
 
       <LinkElement
-        link="https://github.com/matikkaeditorinkaantaja"
+        link="https://github.com/henrivain/Matikkaeditorinkaantaja"
         text="Github sivu"
       />
 
       <LinkElement
-        link="https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/releases"
+        link="https://github.com/henrivain/Matikkaeditorinkaantaja/releases"
         text="Uusin versio"
       />
 

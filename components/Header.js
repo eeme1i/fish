@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className="font-sans mx-auto ">
       <div className="pt-8 px-8 pb-8 flex justify-between text-nord4">
-        <Link href="/home">
+        <Link href="/">
           <a className="px-4 py-2 bg-nord1 rounded-2xl transition ease-in-out hover:scale-110 hover:bg-nord3">
             porinlukio.fi
           </a>

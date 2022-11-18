@@ -6,7 +6,7 @@ function Footer() {
     <div className="font-monospace m-auto ">
       <div className="">
         <div className="flex-wrap flex justify-center mb-4">
-          <FooterItem url="/home" value="Koti" />
+          <FooterItem url="/" value="Koti" />
           <FooterItem url="/login" value="Kirjautumissivu" />
           <FooterItem url="/treasureHunt" value="Aarrejahti" />
           <FooterItem url="/404" value="404" />
@@ -17,7 +17,7 @@ function Footer() {
       </div>
 
       <div className="mx-8 pb-8 text-nord4">
-        <Link href="/home">
+        <Link href="/">
           <a className="hover:underline">porinlukio.fi</a>
         </Link>
         <div className="">

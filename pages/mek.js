@@ -6,9 +6,9 @@ import Breaker from "../components/Breaker";
 import LatexExample from "../components/LatexExample";
 import DownLoadLink from "../components/DownloadLink";
 
-// this link starts download of mek 3.1.7
+// this link starts download of mek 3.1.8
 const MekDownloadUrl =
-  "https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja/archive/refs/tags/v3.1.7.zip";
+  "https://github.com/henrivain/Matikkaeditorinkaantaja/archive/refs/tags/v3.1.8.zip";
 
 function Row({ text }) {
   return <a className="text-center">{text}</a>;
@@ -53,7 +53,7 @@ export default function Home() {
         <div className="bg-gray-800 my-8 mx-auto w-2/3 p-0.5 max-w-2xl">
           <div className="bg-nord3 md:flex p-5 space-y-5 md:space-y-0">
             <div className="my-auto mx-5 text-center">
-              <a className="">Lataa Matikkaeditorinkääntäjä v3.1.7 (Windows)</a>
+              <a className="">Lataa Matikkaeditorinkääntäjä v3.1.8 (Windows)</a>
             </div>
             <div className="ml-auto ">
               <DownLoadLink text="Lataa (zip)" url={MekDownloadUrl} />
@@ -69,7 +69,7 @@ export default function Home() {
 
         <div className="flex flex-col w-2/3 mx-auto gap-2 pb-5">
           <a className="mx-auto text-2xl">Yleistä</a>
-          <Row text="Toimii Windows 7/8.1/10/11 käyttöjärjestelmillä" />
+          <Row text="Toimii Windows 10/11 käyttöjärjestelmillä" />
           <Row text="Suunniteltu erityisesti Ti-Nspirelle ja Ytl:n matikkaeditorille" />
           <Row text="Täysin ilmainen!" />
           <Row text="Porilaista alkuperää" />

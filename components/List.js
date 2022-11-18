@@ -47,7 +47,7 @@ function List() {
           <p>Matikkaeditorinkääntäjä</p>
           <a
             className="ml-auto hover:underline"
-            href="https://github.com/matikkaeditorinkaantaja/Matikkaeditorinkaantaja"
+            href="https://github.com/henrivain/Matikkaeditorinkaantaja"
           >
             linkki
           </a>
@@ -60,23 +60,16 @@ function List() {
         </div>
 
         <div className="sm:flex sm:flex-row">
-          <p>Sneak peek</p>
-          <Link href="/sneakPeek">
-            <a className="ml-auto hover:underline">linkki</a>
-          </Link>
-        </div>
-
-        <div className="sm:flex sm:flex-row">
           <p>Kurssitarjotin</p>
           <Link href="/kurssitarjotin">
             <a className="ml-auto hover:underline">linkki</a>
           </Link>
         </div>
         <div className="sm:flex sm:flex-row">
-          <p>Abivaatetus</p>
+          <p>Abikamaa</p>
           <a
             className="ml-auto hover:underline"
-            href="https://abi.clseifert.com/productDetails/abbab0da-c106-11ea-82ef-1bdf70f4d593"
+            href="https://clseifert.com/fi"
           >
             linkki
           </a>

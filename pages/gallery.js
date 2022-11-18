@@ -22,7 +22,7 @@ export default function Home() {
         <p className="underline text-3xl">Vanhat</p>
 
         <p className="">
-          Nyt Tuomas se peli pois, tai pääset seuraavaksi käytävään pelaamaan
+          Nyt [oppilas] se peli pois, tai pääset seuraavaksi käytävään pelaamaan
           <br />
           -Nimeltä mainitsematon opo 16.2.2022
         </p>
@@ -34,14 +34,14 @@ export default function Home() {
         <p>
           <span className="text-lg">Tuntimerkintä, Oppitunnin häirintä</span>
           <br />
-          Tiedoksi kotiväelle, [opettaja] kälätti tänään matematiikan tunnelli
+          Tiedoksi kotiväelle, [opettaja] kälätti tänään matematiikan tunnilla
           niin paljon, että kukaan ei pystynyt opiskelemaan. Toivomme teidän
           keskustelevan asiasta kotona [opettajan] kanssa, ettei sama toistuisi.
           <br />
           -Terveisin, vittuntunut lukiolainen
         </p>
         <p>
-          Juuso! Riisu!
+          [oppilas]! Riisu!
           <br />
           -Ruotsintunnilla
         </p>
